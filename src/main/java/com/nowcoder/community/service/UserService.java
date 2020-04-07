@@ -2,7 +2,9 @@ package com.nowcoder.community.service;
 
 import com.nowcoder.community.dao.UserDAO;
 import com.nowcoder.community.model.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 
 import javax.annotation.Resource;
 
