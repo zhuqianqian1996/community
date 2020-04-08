@@ -35,5 +35,4 @@ public class MailTest {
         mailClient.sendMessage("javazhu1995@sina.com","欢迎你",content);
         System.out.println(content);
     }
-
 }
