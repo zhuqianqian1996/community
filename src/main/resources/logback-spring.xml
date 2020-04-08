@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <contextName>community</contextName>
-    <property name="LOG_PATH" value="/Users/mac/IdeaProjects/newcommunity"/>
+    <property name="LOG_PATH" value="F:\MyProject\communityLog"/>
     <property name="APPDIR" value="community"/>
 
     <!-- error file -->

@@ -26,7 +26,7 @@ public interface UserDAO {
 
     //增加一个用户
     @Insert({"insert into",TABLE_NAME,"(",INSERT_FIELDS,") " +
-            "values(#{id},#{username},#{password},#{salt},#{email},#{type},#{status},#{activationCode},#{headerUrl},#{createTime})"})
+            "values(#{username},#{password},#{salt},#{email},#{type},#{status},#{activationCode},#{headerUrl},#{createTime})"})
     int addUser(User user);
 
     //修改的状态
