@@ -1,12 +1,15 @@
 package com.nowcoder.community.prepare;
 
 import com.nowcoder.community.prepare.AlphaService;
+import com.nowcoder.community.util.CommunityUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Enumeration;
@@ -67,4 +70,25 @@ public class AlphaController {
         return "a student";
     }
 
+    //cookie
+    @RequestMapping(params = "/cookie/set",method = RequestMethod.GET)
+    public String setCookie(HttpServletResponse response){
+        //创建cookie
+        Cookie  cookie = new Cookie("code", CommunityUtil.generateUUID());
+        //设置cookie生效范围
+        cookie.setPath("/community/alpha");
+        //cookie生效时间
+        cookie.setMaxAge(60*10);
+        //发送cookie
+        response.addCookie(cookie);
+        return "";
+
+    }
+
+    //session示例
+    public String setSession(HttpSession session){
+        session.setAttribute("id",1);
+        session.setAttribute("name","test");
+        return "session";
+    }
 }
