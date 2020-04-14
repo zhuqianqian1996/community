@@ -104,6 +104,7 @@ public class LoginController implements CommunityConstant {
         }
     }
 
+    //登录
     @RequestMapping(path = "/login",method = RequestMethod.POST)
     public String login(String username, String password, String code, boolean rememberme,
                         HttpSession session,HttpServletResponse response,Model model){
@@ -117,7 +118,7 @@ public class LoginController implements CommunityConstant {
        int expiredSeconds =  rememberme?REMEMBER_EXPIRE_SECONDS:DEFAULT_EXPIRE_SECONDS;
         Map<String, Object> map = userService.login(username, password, expiredSeconds);
         if (map.containsKey("ticket")){
-            Cookie cookie = new Cookie("ticket", (String) map.get("ticket"));
+            Cookie cookie = new Cookie("ticket",  map.get("ticket").toString());
             cookie.setPath(contextPath);
             cookie.setMaxAge(expiredSeconds);
             response.addCookie(cookie);
@@ -129,9 +130,10 @@ public class LoginController implements CommunityConstant {
         }
     }
 
+    //退出
     @RequestMapping(path = "/logout",method = RequestMethod.GET)
     public String logout(@CookieValue("ticket") String ticket){
         userService.logout(ticket);
-        return "site/login";
+        return "redirect:/login";
     }
 }

@@ -44,7 +44,7 @@ public class UserService implements CommunityConstant {
         return userDAO.selectUserById(id);
     }
 
-    //register
+    //注册
     public Map<String,Object> register(User user){
         Map<String,Object> map = new HashMap<>();
         //空值判断
@@ -84,7 +84,7 @@ public class UserService implements CommunityConstant {
            user.setPassword(CommunityUtil.md5(user.getPassword() + user.getSalt()));
            user.setType(0);//普通用户
            user.setStatus(0);
-           user.setHeaderUrl(String.format("images.nowcoder.com/head/%dt.png", new Random().nextInt(1000)));
+           user.setHeaderUrl(String.format("http://images.nowcoder.com/head/%dt.png", new Random().nextInt(1000)));
            user.setActivationCode(CommunityUtil.generateUUID());
            user.setCreateTime(new Date());
            userDAO.addUser(user);
@@ -101,7 +101,7 @@ public class UserService implements CommunityConstant {
            return map;
     }
 
-    //activation
+    //激活
     public int activation(int userId,String code){
         User user = userDAO.selectUserById(userId);
         if (user.getStatus()==1){
@@ -114,6 +114,7 @@ public class UserService implements CommunityConstant {
         }
     }
 
+    //登录
    public Map<String, Object> login(String username,String password,int expiredSeconds){
        Map<String, Object> map = new HashMap<>();
        //空值处理
@@ -152,10 +153,15 @@ public class UserService implements CommunityConstant {
        map.put("ticket",loginTicket.getTicket());
        return map;
    }
-
+   //退出
    public void logout(String ticket){
         loginTicketDAO.updateStatus(ticket,1);
    }
+
+   //查询凭证
+    public LoginTicket getLoginTicket(String ticket){
+        return loginTicketDAO.selectByTicket(ticket);
+    }
 }
 
 

@@ -12,8 +12,8 @@ public interface CommunityConstant {
     int ACTIVATION_FAILURE = 2;
 
     //默认状态下的激活时间
-    int DEFAULT_EXPIRE_SECONDS = 3600 * 12;
+    int DEFAULT_EXPIRE_SECONDS = 360000 * 120;
 
     //记住状态下的激活时间
-    int REMEMBER_EXPIRE_SECONDS = 3600 * 12 * 100;
+    int REMEMBER_EXPIRE_SECONDS = 36000 * 12 * 1000;
 }
