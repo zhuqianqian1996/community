@@ -18,7 +18,7 @@ public interface LoginTicketDAO {
     int insertLoginTicket(LoginTicket loginTicket);
 
     //查询LoginTicket
-    @Select({"select ",SELECT_FIELDS,"from ",TABLE_NAME," where ticket=#{ticket}"})
+    @Select({"select  ",SELECT_FIELDS,"from ",TABLE_NAME," where ticket=#{ticket}"})
     LoginTicket selectByTicket(String ticket);
 
     //凭证失效（更改状态）

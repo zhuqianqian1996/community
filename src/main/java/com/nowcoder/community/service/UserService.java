@@ -162,6 +162,11 @@ public class UserService implements CommunityConstant {
     public LoginTicket getLoginTicket(String ticket){
         return loginTicketDAO.selectByTicket(ticket);
     }
+
+    //上传头像
+    public int uploadHeaderUrl(int userId,String headerUrl){
+        return userDAO.UpdateHeaderUrl(userId,headerUrl);
+    }
 }
 
 
