@@ -43,4 +43,9 @@ public class DiscussPostService {
 
        return discussPostDAO.addDiscussPost(post);
    }
+
+
+   public DiscussPost findDiscussPostById(int id){
+       return discussPostDAO.selectDiscussPostById(id);
+   }
 }

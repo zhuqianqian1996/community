@@ -4,6 +4,7 @@ import com.nowcoder.community.model.DiscussPost;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -27,4 +28,8 @@ public interface DiscussPostDAO {
     @Insert({"insert into",TABLE_NAME,"(",INSERT_FIELDS,")" +
             " values(#{userId},#{title},#{content},#{type},#{status},#{createTime},#{commentCount},#{score})"})
     int addDiscussPost(DiscussPost discussPost);
+
+    //查询帖子的详情
+    @Select({"select ",SELECT_FIELDS,"from ",TABLE_NAME," where id=#{id}"})
+    DiscussPost selectDiscussPostById(int id);
 }
