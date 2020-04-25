@@ -29,6 +29,7 @@ public class DiscussPostController {
     @Autowired
     private UserService userService;
 
+    //新增帖子
     @RequestMapping(path = "/add",method = RequestMethod.POST)
     @ResponseBody
     public String addDiscussPost(String title,String content){
