@@ -18,7 +18,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
 
-@Service
+//@Service
 public class AlphaService {
 
     @Resource
