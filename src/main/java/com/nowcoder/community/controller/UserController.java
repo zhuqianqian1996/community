@@ -12,9 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
@@ -45,14 +43,14 @@ public class UserController {
     private HostHolder hostHolder;
 
     @LoginRequired
-    @RequestMapping(path = "/setting",method = RequestMethod.GET)
+    @GetMapping(path = "/setting")
     public String getSetting(){
         return "site/setting";
     }
 
     //上传图片
     @LoginRequired
-    @RequestMapping(path = "/upload", method = RequestMethod.POST)
+    @PostMapping(path = "/upload")
     public String uploadHeader(MultipartFile headerImage, Model model){
         //判断图片是否为空
         if (headerImage==null){
@@ -84,7 +82,7 @@ public class UserController {
         return "redirect:/index";
     }
 
-    @RequestMapping(path = "/header/{fileName}",method = RequestMethod.GET)
+    @GetMapping(path = "/header/{fileName}")
     public void getHeader(@PathVariable("fileName") String fileName, HttpServletResponse response){
         //服务器存放的路径
         fileName = uploadPath + "/" + fileName;

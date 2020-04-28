@@ -13,10 +13,7 @@ import com.nowcoder.community.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
@@ -37,7 +34,7 @@ public class DiscussPostController implements CommunityConstant {
     private CommentService commentService;
 
     //新增帖子
-    @RequestMapping(path = "/add",method = RequestMethod.POST)
+    @PostMapping(path = "/add")
     @ResponseBody
     public String addDiscussPost(String title,String content){
          User user = hostHolder.getUser();
@@ -54,7 +51,7 @@ public class DiscussPostController implements CommunityConstant {
          return CommunityUtil.getJOSNString(0,"发布成功!");
     }
 
-    @RequestMapping(path = "/detail/{discussPostId}",method = RequestMethod.GET)
+    @GetMapping("/detail/{discussPostId}")
     public String getDiscussPost(@PathVariable("discussPostId") int discussPostId, Model model, Page page){
          DiscussPost post = discussPostService.findDiscussPostById(discussPostId);
          User user = userService.getUserById(post.getUserId());
@@ -104,10 +101,8 @@ public class DiscussPostController implements CommunityConstant {
             }
            model.addAttribute("comments",commentVoList);
         }
-
         return "site/discuss-detail";
     }
-
 }
 
 

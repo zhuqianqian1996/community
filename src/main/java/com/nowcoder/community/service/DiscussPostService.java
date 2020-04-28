@@ -1,5 +1,6 @@
 package com.nowcoder.community.service;
 
+import com.nowcoder.community.dao.CommentDAO;
 import com.nowcoder.community.dao.DiscussPostDAO;
 import com.nowcoder.community.model.DiscussPost;
 import com.nowcoder.community.util.SensitiveFilter;
@@ -47,5 +48,9 @@ public class DiscussPostService {
 
    public DiscussPost findDiscussPostById(int id){
        return discussPostDAO.selectDiscussPostById(id);
+   }
+
+   public int updateCommentCount(int id,int count){
+       return discussPostDAO.updateCommentCount(id,count);
    }
 }

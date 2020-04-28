@@ -1,10 +1,7 @@
 package com.nowcoder.community.dao;
 
 import com.nowcoder.community.model.DiscussPost;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -32,4 +29,9 @@ public interface DiscussPostDAO {
     //查询帖子的详情
     @Select({"select ",SELECT_FIELDS,"from ",TABLE_NAME," where id=#{id}"})
     DiscussPost selectDiscussPostById(int id);
+
+    //更新帖子的数量
+    @Update({"update",TABLE_NAME,"set comment_count = #{commentCount} where id = #{id}"})
+    int updateCommentCount(@Param("id") int id,@Param("commentCount") int count);
+
 }

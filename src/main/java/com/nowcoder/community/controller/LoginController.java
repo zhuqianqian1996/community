@@ -11,10 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
@@ -40,13 +37,13 @@ public class LoginController implements CommunityConstant {
     private String contextPath;
 
     //找到首页
-    @RequestMapping(path = "/register",method = RequestMethod.GET)
+    @GetMapping(path = "/register")
     public String getRegisterPage(){
         return "site/register";
     }
 
     //注册用户
-    @RequestMapping(path = "/register",method = RequestMethod.POST)
+    @PostMapping(path = "/register")
     public String register(Model model , User user){
         Map<String, Object> map = userService.register(user);
         //注册成功
@@ -63,13 +60,13 @@ public class LoginController implements CommunityConstant {
     }
 
     //登录页面
-    @RequestMapping(path = "/login",method = RequestMethod.GET)
+    @GetMapping(path = "/login")
     public String getLoginPage(){
         return "site/login";
     }
 
     //激活邮件 激活路径:http://localhost:8080/community/activation/101/code
-    @RequestMapping(path = "/activation/{userId}/{code}",method = RequestMethod.GET)
+    @GetMapping(path = "/activation/{userId}/{code}")
     public String activation(@PathVariable("userId") int userId,
                              @PathVariable("code") String code,
                              Model model){
@@ -88,7 +85,7 @@ public class LoginController implements CommunityConstant {
     }
     
     //生成验证码的方法(/kaptcha)
-    @RequestMapping(path = "/kaptcha",method = RequestMethod.GET)
+    @GetMapping(path = "/kaptcha")
     public void getKaptcha(HttpServletResponse response, HttpSession session){
         //生成验证码
         String text = kaptchaProducer.createText();
@@ -105,7 +102,7 @@ public class LoginController implements CommunityConstant {
     }
 
     //登录
-    @RequestMapping(path = "/login",method = RequestMethod.POST)
+    @PostMapping(path = "/login")
     public String login(String username, String password, String code, boolean rememberme,
                         HttpSession session,HttpServletResponse response,Model model){
         //检查验证码
@@ -131,7 +128,7 @@ public class LoginController implements CommunityConstant {
     }
 
     //退出
-    @RequestMapping(path = "/logout",method = RequestMethod.GET)
+    @GetMapping(path = "/logout")
     public String logout(@CookieValue("ticket") String ticket){
         userService.logout(ticket);
         return "redirect:/login";
