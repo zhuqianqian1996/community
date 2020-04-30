@@ -1,0 +1,81 @@
+2020-04-29 22:44:57,092 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:50] Starting MapperTest on WIN10-804271905 with PID 23556 (started by Administrator in F:\MyProject\community)
+2020-04-29 22:44:57,202 INFO [main] c.n.c.MapperTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-04-29 22:45:02,750 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-04-29 22:45:03,409 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-04-29 22:45:06,519 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 22:45:07,088 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-29 22:45:08,764 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:59] Started MapperTest in 13.903 seconds (JVM running for 18.382)
+2020-04-29 22:45:10,554 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 22:45:10,583 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
+2020-04-29 22:46:30,593 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:50] Starting MapperTest on WIN10-804271905 with PID 19680 (started by Administrator in F:\MyProject\community)
+2020-04-29 22:46:30,602 INFO [main] c.n.c.MapperTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-04-29 22:46:34,804 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-04-29 22:46:35,420 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-04-29 22:46:39,001 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 22:46:40,667 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-29 22:46:43,452 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:59] Started MapperTest in 14.646 seconds (JVM running for 17.687)
+2020-04-29 22:46:45,386 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 22:46:45,730 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
+2020-04-29 22:53:04,278 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:50] Starting MapperTest on WIN10-804271905 with PID 11344 (started by Administrator in F:\MyProject\community)
+2020-04-29 22:53:04,283 INFO [main] c.n.c.MapperTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-04-29 22:53:08,449 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-04-29 22:53:09,188 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-04-29 22:53:12,864 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 22:53:13,471 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-29 22:53:15,342 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:59] Started MapperTest in 12.988 seconds (JVM running for 16.425)
+2020-04-29 22:53:17,012 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 22:53:17,050 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
+2020-04-29 22:54:43,296 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:50] Starting MapperTest on WIN10-804271905 with PID 21120 (started by Administrator in F:\MyProject\community)
+2020-04-29 22:54:43,298 INFO [main] c.n.c.MapperTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-04-29 22:54:47,375 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-04-29 22:54:47,969 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-04-29 22:54:51,656 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 22:54:52,203 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-29 22:54:54,746 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:59] Started MapperTest in 12.957 seconds (JVM running for 16.094)
+2020-04-29 22:54:57,389 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 22:54:57,547 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
+2020-04-29 22:57:21,245 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:50] Starting MapperTest on WIN10-804271905 with PID 22912 (started by Administrator in F:\MyProject\community)
+2020-04-29 22:57:21,247 INFO [main] c.n.c.MapperTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-04-29 22:57:27,603 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-04-29 22:57:28,450 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-04-29 22:57:32,632 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 22:57:33,171 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-29 22:57:36,181 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:59] Started MapperTest in 17.272 seconds (JVM running for 21.669)
+2020-04-29 22:57:40,758 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 22:57:40,797 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
+2020-04-29 22:59:02,314 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:50] Starting MapperTest on WIN10-804271905 with PID 14476 (started by Administrator in F:\MyProject\community)
+2020-04-29 22:59:02,324 INFO [main] c.n.c.MapperTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-04-29 22:59:06,394 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-04-29 22:59:07,108 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-04-29 22:59:10,871 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 22:59:11,293 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-29 22:59:14,139 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:59] Started MapperTest in 13.589 seconds (JVM running for 17.222)
+2020-04-29 22:59:16,578 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 22:59:16,603 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
+2020-04-29 23:07:58,841 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:50] Starting MapperTest on WIN10-804271905 with PID 20300 (started by Administrator in F:\MyProject\community)
+2020-04-29 23:07:58,844 INFO [main] c.n.c.MapperTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-04-29 23:08:04,775 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-04-29 23:08:05,643 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-04-29 23:08:11,405 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:08:11,940 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-29 23:08:13,543 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:59] Started MapperTest in 16.579 seconds (JVM running for 20.361)
+2020-04-29 23:08:16,350 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:08:16,377 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
+2020-04-29 23:13:11,199 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:50] Starting MapperTest on WIN10-804271905 with PID 27716 (started by Administrator in F:\MyProject\community)
+2020-04-29 23:13:11,205 INFO [main] c.n.c.MapperTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-04-29 23:13:16,123 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-04-29 23:13:16,948 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-04-29 23:13:22,545 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:13:23,393 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-29 23:13:25,760 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:59] Started MapperTest in 16.338 seconds (JVM running for 19.884)
+2020-04-29 23:13:27,715 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:13:27,755 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
+2020-04-29 23:15:21,099 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:50] Starting MapperTest on WIN10-804271905 with PID 10836 (started by Administrator in F:\MyProject\community)
+2020-04-29 23:15:21,114 INFO [main] c.n.c.MapperTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-04-29 23:15:27,993 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-04-29 23:15:28,871 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-04-29 23:15:33,814 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:15:34,436 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-04-29 23:15:36,641 INFO [main] c.n.c.MapperTest [StartupInfoLogger.java:59] Started MapperTest in 17.733 seconds (JVM running for 20.861)
+2020-04-29 23:15:38,716 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-29 23:15:38,739 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed

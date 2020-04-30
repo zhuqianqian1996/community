@@ -2,9 +2,11 @@ package com.nowcoder.community;
 
 import com.nowcoder.community.dao.DiscussPostDAO;
 import com.nowcoder.community.dao.LoginTicketDAO;
+import com.nowcoder.community.dao.MessageDAO;
 import com.nowcoder.community.dao.UserDAO;
 import com.nowcoder.community.model.DiscussPost;
 import com.nowcoder.community.model.LoginTicket;
+import com.nowcoder.community.model.Message;
 import com.nowcoder.community.model.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,6 +16,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
+import javax.xml.transform.Source;
 import java.util.Date;
 import java.util.List;
 
@@ -31,6 +34,9 @@ public class MapperTest {
 
     @Resource
     LoginTicketDAO loginTicketDAO;
+
+    @Resource
+    MessageDAO messageDAO;
 
     @Test
     public void selectUserById(){
@@ -81,5 +87,30 @@ public class MapperTest {
         System.out.println(loginTicket);
 
     }
+
+    @Test
+    public void testSelectConversations(){
+        List<Message> messages = messageDAO.selectConversations(111, 0, 10);
+        for (Message message : messages) {
+            System.out.println(message);
+        }
+
+        int conversationCount = messageDAO.selectConversationCount(111);
+        System.out.println(conversationCount);
+
+        final List<Message> list = messageDAO.selectLetters("111_112", 0, 10);
+        for (Message message : list) {
+            System.out.println(message);
+        }
+
+        int count = messageDAO.selectLetterCount("111_112");
+        System.out.println(count);
+
+        count = messageDAO.selectLetterUnreadCount(131,"111_131");
+        System.out.println(count);
+
+    }
+
+
 
 }
