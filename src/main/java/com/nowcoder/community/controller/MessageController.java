@@ -5,19 +5,19 @@ import com.nowcoder.community.model.Page;
 import com.nowcoder.community.model.User;
 import com.nowcoder.community.service.MessageService;
 import com.nowcoder.community.service.UserService;
+import com.nowcoder.community.util.CommunityUtil;
 import com.nowcoder.community.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.jws.WebParam;
 import java.nio.charset.MalformedInputException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Controller
 public class MessageController {
@@ -29,7 +29,7 @@ public class MessageController {
    private HostHolder hostHolder;
 
    @Autowired
-    private  UserService userService;
+   private  UserService userService;
 
    //私信列表
    @GetMapping("/letter/list")
@@ -85,10 +85,30 @@ public class MessageController {
        model.addAttribute("letters",letters);
        //私信目标
        model.addAttribute("target",getTargetUser(conversationId));
+
+       //设置已读
+       List<Integer> ids = getLettersId(letterList);
+       if (!ids.isEmpty()){
+           messageService.readMessage(ids,1);
+       }
        return "/site/letter-detail";
    }
 
-   private User getTargetUser(String conversationId){
+   //获取私信的id
+    private List<Integer> getLettersId(List<Message> list){
+        List<Integer> ids = new ArrayList<>();
+        if (list != null)
+            for (Message message : list) {
+                //如果当前用户是接收用户并且该条私信未读
+                if (hostHolder.getUser().getId() == message.getToId() && message.getStatus() == 0){
+                    ids.add(message.getId());
+                }
+            }
+        return ids;
+    }
+
+
+    private User getTargetUser(String conversationId){
        String[] ids = conversationId.split("_");
        int first_id = Integer.parseInt(ids[0]);
        int last_id = Integer.parseInt(ids[1]);
@@ -99,4 +119,30 @@ public class MessageController {
            return userService.getUserById(first_id);
        }
    }
+
+   //添加私信
+   @PostMapping("/letter/send")
+   @ResponseBody
+    public String sendMessage(String toName,String content){
+        User targetUser = userService.getUserByName(toName);
+        if (targetUser == null){
+            return CommunityUtil.getJOSNString(1,"用户不存在！");
+        }
+
+        //私信的信息
+        Message message = new Message();
+        message.setFromId(hostHolder.getUser().getId());
+        message.setToId(userService.getUserByName(toName).getId());
+        if (message.getFromId() < message.getToId()){
+            message.setConversationId(message.getFromId() + "_" + message.getToId());
+        }else {
+            message.setConversationId(message.getToId() + "_" +message.getFromId());
+        }
+        message.setContent(content);
+        message.setCreateTime(new Date());
+        messageService.addMessage(message);
+
+        return CommunityUtil.getJOSNString(0);
+   }
+
 }

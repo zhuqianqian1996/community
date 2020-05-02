@@ -1,16 +1,13 @@
 package com.nowcoder.community.service;
 
-import com.nowcoder.community.dao.CommentDAO;
 import com.nowcoder.community.dao.DiscussPostDAO;
 import com.nowcoder.community.model.DiscussPost;
 import com.nowcoder.community.util.SensitiveFilter;
-import jdk.internal.dynalink.linker.LinkerServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.util.HtmlUtils;
 
 import javax.annotation.Resource;
-import javax.swing.text.html.HTML;
 import java.util.List;
 
 @Service
@@ -22,7 +19,7 @@ public class DiscussPostService {
    @Autowired
    private SensitiveFilter sensitiveFilter;
 
-   public List<DiscussPost> getDiscussPosts(int userId,int offset,int limit){
+   public List<DiscussPost> findDiscussPosts(int userId, int offset, int limit){
        return discussPostDAO.selectDiscussPosts(userId,offset,limit);
    }
 

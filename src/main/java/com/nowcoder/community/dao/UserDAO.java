@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+import org.springframework.stereotype.Service;
 
 @Mapper
 public interface UserDAO {
@@ -40,4 +41,5 @@ public interface UserDAO {
     //更新密码
     @Update({"update ",TABLE_NAME,"set password=#{password} where id=#{id}"})
     int UpdatePassword(int id,String password);
+
 }

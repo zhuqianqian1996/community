@@ -167,6 +167,13 @@ public class UserService implements CommunityConstant {
     public int uploadHeaderUrl(int userId,String headerUrl){
         return userDAO.UpdateHeaderUrl(userId,headerUrl);
     }
+
+   //根据用户名查询用户
+    public User getUserByName(String name){
+        return userDAO.selectUserByName(name);
+    }
+
+
 }
 
 
