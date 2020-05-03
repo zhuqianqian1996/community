@@ -42,4 +42,10 @@ public class HomeController {
         model.addAttribute("page",page);
         return "index";
     }
+
+    //得到500的页面
+    @GetMapping("/error")
+    public String getErrorPage(){
+        return "error/500";
+    }
 }

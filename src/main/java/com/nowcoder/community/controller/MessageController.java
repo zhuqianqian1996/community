@@ -126,7 +126,7 @@ public class MessageController {
     public String sendMessage(String toName,String content){
         User targetUser = userService.getUserByName(toName);
         if (targetUser == null){
-            return CommunityUtil.getJOSNString(1,"用户不存在！");
+            return CommunityUtil.getJOSNString(1,"目标用户不存在！");
         }
 
         //私信的信息
@@ -144,5 +144,4 @@ public class MessageController {
 
         return CommunityUtil.getJOSNString(0);
    }
-
 }
