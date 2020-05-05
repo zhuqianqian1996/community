@@ -1,6 +1,7 @@
 package com.nowcoder.community.aspect;
 
 import com.nowcoder.community.controller.advice.ExceptionAdvice;
+import com.nowcoder.community.model.Comment;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -37,5 +38,6 @@ public class ServiceLogAspect {
         String target = joinPoint.getSignature().getDeclaringTypeName();
         String method = joinPoint.getSignature().getName();
         logger.error("用户[" + ip + "]在[" + time + "]访问了["+target+"."+method+"]");
+        
     }
 }

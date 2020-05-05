@@ -1,52 +1,368 @@
-2020-05-04 08:31:55,088 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 9156 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
-2020-05-04 08:31:55,111 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
-2020-05-04 08:31:55,397 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-05-04 08:31:55,398 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-05-04 08:31:57,892 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
-2020-05-04 08:31:57,910 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-05-04 08:31:57,921 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2020-05-04 08:31:57,922 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.31]
-2020-05-04 08:31:57,931 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2020-05-04 08:31:57,932 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
-2020-05-04 08:31:57,932 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2020-05-04 08:31:57,933 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2020-05-04 08:31:58,101 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
-2020-05-04 08:31:58,298 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2020-05-04 08:31:58,298 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 2868 ms
-2020-05-04 08:31:58,560 INFO [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
-2020-05-04 08:31:58,972 INFO [restartedMain] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
-2020-05-04 08:32:00,131 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
-2020-05-04 08:32:00,282 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
-2020-05-04 08:32:00,741 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
-2020-05-04 08:32:00,787 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-05-04 08:32:00,818 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:202] Tomcat started on port(s): 8080 (http) with context path '/community'
-2020-05-04 08:32:00,822 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 6.726 seconds (JVM running for 9.156)
-2020-05-04 08:32:52,900 INFO [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-05-04 08:32:52,901 INFO [http-nio-8080-exec-8] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2020-05-04 08:32:52,928 INFO [http-nio-8080-exec-8] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 26 ms
-2020-05-04 08:33:56,567 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 12768 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
-2020-05-04 08:33:56,572 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
-2020-05-04 08:33:56,685 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-05-04 08:33:56,685 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-05-04 08:33:59,552 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
-2020-05-04 08:33:59,567 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-05-04 08:33:59,577 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2020-05-04 08:33:59,578 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.31]
-2020-05-04 08:33:59,586 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2020-05-04 08:33:59,586 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
-2020-05-04 08:33:59,586 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2020-05-04 08:33:59,587 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2020-05-04 08:33:59,591 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
-2020-05-04 08:33:59,717 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2020-05-04 08:33:59,718 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 3032 ms
-2020-05-04 08:33:59,991 INFO [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
-2020-05-04 08:34:00,363 INFO [restartedMain] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
-2020-05-04 08:34:01,042 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
-2020-05-04 08:34:01,159 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
-2020-05-04 08:34:01,402 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
-2020-05-04 08:34:01,446 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-05-04 08:34:01,481 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:202] Tomcat started on port(s): 8080 (http) with context path '/community'
-2020-05-04 08:34:01,487 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 6.864 seconds (JVM running for 8.861)
-2020-05-04 08:34:21,120 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-05-04 08:34:21,121 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2020-05-04 08:34:21,137 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 16 ms
+2020-05-05 09:05:44,848 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:50] Starting RedisTemplateTest on WIN10-804271905 with PID 12940 (started by Administrator in F:\MyProject\community)
+2020-05-05 09:05:44,857 INFO [main] c.n.c.RedisTemplateTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-05 09:05:48,538 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 09:05:48,542 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-05 09:05:48,617 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 66ms. Found 0 Elasticsearch repository interfaces.
+2020-05-05 09:05:48,638 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 09:05:48,641 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-05 09:05:48,670 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2020-05-05 09:05:50,287 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$c4e0bcdb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-05 09:05:51,162 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-05 09:05:51,710 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-05 09:05:56,161 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-05 09:05:56,726 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-05 09:06:00,611 INFO [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:83] 
+
+Using generated security password: 6a34dc87-cdd0-4986-964c-26d8d91a71e0
+
+2020-05-05 09:06:01,250 INFO [main] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63e70bf9, org.springframework.security.web.context.SecurityContextPersistenceFilter@22aefae0, org.springframework.security.web.header.HeaderWriterFilter@72a3462f, org.springframework.security.web.csrf.CsrfFilter@74bdfa0b, org.springframework.security.web.authentication.logout.LogoutFilter@214fba74, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1851c7d2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@d76099a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@402a69f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4f3fec43, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b7ee56c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d3a03fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@419f0ea, org.springframework.security.web.session.SessionManagementFilter@632c3f55, org.springframework.security.web.access.ExceptionTranslationFilter@6076c66, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f76872f]
+2020-05-05 09:06:02,525 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1220] Using default implementation for ThreadExecutor
+2020-05-05 09:06:02,558 INFO [main] o.q.c.SchedulerSignalerImpl [SchedulerSignalerImpl.java:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-05 09:06:02,559 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:229] Quartz Scheduler v.2.3.2 created.
+2020-05-05 09:06:02,561 INFO [main] o.q.s.RAMJobStore [RAMJobStore.java:155] RAMJobStore initialized.
+2020-05-05 09:06:02,563 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:294] Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-05 09:06:02,563 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1374] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-05 09:06:02,565 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1378] Quartz scheduler version: 2.3.2
+2020-05-05 09:06:02,566 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7434ee13
+2020-05-05 09:06:02,986 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-05 09:06:03,173 INFO [main] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:727] Starting Quartz Scheduler now
+2020-05-05 09:06:03,175 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:547] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-05 09:06:03,212 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:59] Started RedisTemplateTest in 19.434 seconds (JVM running for 21.971)
+2020-05-05 09:06:04,046 INFO [main] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-05 09:06:04,050 INFO [main] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-05 09:06:04,993 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 09:06:04,998 INFO [Thread-3] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:845] Shutting down Quartz Scheduler
+2020-05-05 09:06:05,003 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:666] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-05 09:06:05,006 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 09:06:05,013 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:740] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-05 09:06:05,025 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-05 09:06:05,168 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
+2020-05-05 09:15:15,121 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:50] Starting RedisTemplateTest on WIN10-804271905 with PID 6768 (started by Administrator in F:\MyProject\community)
+2020-05-05 09:15:15,124 INFO [main] c.n.c.RedisTemplateTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-05 09:15:17,636 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 09:15:17,640 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-05 09:15:17,694 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 47ms. Found 0 Elasticsearch repository interfaces.
+2020-05-05 09:15:17,710 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 09:15:17,712 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-05 09:15:17,748 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+2020-05-05 09:15:20,244 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$7175733] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-05 09:15:21,042 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-05 09:15:21,662 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-05 09:15:25,349 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-05 09:15:25,664 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-05 09:15:29,528 INFO [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:83] 
+
+Using generated security password: a53fa245-f7a2-426b-8fe7-04b26c9066d0
+
+2020-05-05 09:15:30,143 INFO [main] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@250a946, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d37aa0f, org.springframework.security.web.header.HeaderWriterFilter@1ddf42dd, org.springframework.security.web.csrf.CsrfFilter@2d07aacc, org.springframework.security.web.authentication.logout.LogoutFilter@5f7cd50e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@580ffea, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@dd20ebc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5fe5c68b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7f2ca6f8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22aefae0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b7ee56c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ffb0d10, org.springframework.security.web.session.SessionManagementFilter@1c18ee69, org.springframework.security.web.access.ExceptionTranslationFilter@18db3b3c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@350567f1]
+2020-05-05 09:15:31,399 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1220] Using default implementation for ThreadExecutor
+2020-05-05 09:15:31,430 INFO [main] o.q.c.SchedulerSignalerImpl [SchedulerSignalerImpl.java:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-05 09:15:31,430 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:229] Quartz Scheduler v.2.3.2 created.
+2020-05-05 09:15:31,433 INFO [main] o.q.s.RAMJobStore [RAMJobStore.java:155] RAMJobStore initialized.
+2020-05-05 09:15:31,435 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:294] Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-05 09:15:31,435 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1374] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-05 09:15:31,436 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1378] Quartz scheduler version: 2.3.2
+2020-05-05 09:15:31,437 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@55c46ec1
+2020-05-05 09:15:31,789 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-05 09:15:31,930 INFO [main] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:727] Starting Quartz Scheduler now
+2020-05-05 09:15:31,931 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:547] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-05 09:15:31,954 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:59] Started RedisTemplateTest in 17.899 seconds (JVM running for 20.188)
+2020-05-05 09:15:32,569 INFO [main] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-05 09:15:32,575 INFO [main] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-05 09:15:33,549 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 09:15:33,551 INFO [Thread-3] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:845] Shutting down Quartz Scheduler
+2020-05-05 09:15:33,551 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:666] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-05 09:15:33,552 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 09:15:33,553 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:740] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-05 09:15:33,561 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-05 09:15:33,791 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
+2020-05-05 09:26:34,147 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:50] Starting RedisTemplateTest on WIN10-804271905 with PID 12236 (started by Administrator in F:\MyProject\community)
+2020-05-05 09:26:34,150 INFO [main] c.n.c.RedisTemplateTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-05 09:26:37,024 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 09:26:37,028 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-05 09:26:37,080 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 43ms. Found 0 Elasticsearch repository interfaces.
+2020-05-05 09:26:37,106 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 09:26:37,111 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-05 09:26:37,148 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2020-05-05 09:26:38,650 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$5a5f1bef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-05 09:26:39,515 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-05 09:26:40,082 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-05 09:26:43,986 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-05 09:26:44,243 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-05 09:26:47,626 INFO [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:83] 
+
+Using generated security password: 233b189e-bd37-4557-9c71-6d587f223823
+
+2020-05-05 09:26:48,160 INFO [main] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e4ac598, org.springframework.security.web.context.SecurityContextPersistenceFilter@17f8db6, org.springframework.security.web.header.HeaderWriterFilter@b0d3e7, org.springframework.security.web.csrf.CsrfFilter@77ba583, org.springframework.security.web.authentication.logout.LogoutFilter@48d44b46, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6de84336, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3e4afd10, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@cf10c92, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7717b4a0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ddf42dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72a3462f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f76872f, org.springframework.security.web.session.SessionManagementFilter@68a5aadd, org.springframework.security.web.access.ExceptionTranslationFilter@147c00aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ee12d58]
+2020-05-05 09:26:49,525 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1220] Using default implementation for ThreadExecutor
+2020-05-05 09:26:49,565 INFO [main] o.q.c.SchedulerSignalerImpl [SchedulerSignalerImpl.java:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-05 09:26:49,566 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:229] Quartz Scheduler v.2.3.2 created.
+2020-05-05 09:26:49,568 INFO [main] o.q.s.RAMJobStore [RAMJobStore.java:155] RAMJobStore initialized.
+2020-05-05 09:26:49,571 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:294] Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-05 09:26:49,573 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1374] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-05 09:26:49,574 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1378] Quartz scheduler version: 2.3.2
+2020-05-05 09:26:49,576 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1e95f584
+2020-05-05 09:26:49,961 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-05 09:26:50,146 INFO [main] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:727] Starting Quartz Scheduler now
+2020-05-05 09:26:50,147 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:547] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-05 09:26:50,177 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:59] Started RedisTemplateTest in 17.129 seconds (JVM running for 19.71)
+2020-05-05 09:26:50,848 INFO [main] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-05 09:26:50,852 INFO [main] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-05 09:26:51,811 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 09:26:51,812 INFO [Thread-3] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:845] Shutting down Quartz Scheduler
+2020-05-05 09:26:51,813 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:666] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-05 09:26:51,814 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 09:26:51,818 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:740] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-05 09:26:51,836 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-05 09:26:52,005 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
+2020-05-05 09:32:00,081 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:50] Starting RedisTemplateTest on WIN10-804271905 with PID 10132 (started by Administrator in F:\MyProject\community)
+2020-05-05 09:32:00,083 INFO [main] c.n.c.RedisTemplateTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-05 09:32:03,911 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 09:32:03,919 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-05 09:32:03,985 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 57ms. Found 0 Elasticsearch repository interfaces.
+2020-05-05 09:32:04,001 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 09:32:04,003 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-05 09:32:04,037 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2020-05-05 09:32:05,502 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$8c90d316] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-05 09:32:06,242 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-05 09:32:06,833 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-05 09:32:11,326 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-05 09:32:11,621 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-05 09:32:15,020 INFO [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:83] 
+
+Using generated security password: d4ee6e6d-10f6-4692-b8d4-21d563642751
+
+2020-05-05 09:32:15,535 INFO [main] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5fe5c68b, org.springframework.security.web.context.SecurityContextPersistenceFilter@6076c66, org.springframework.security.web.header.HeaderWriterFilter@5c1c9881, org.springframework.security.web.csrf.CsrfFilter@ff5d4f1, org.springframework.security.web.authentication.logout.LogoutFilter@401ec794, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@191e654, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6c70b7c3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2ffb0d10, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@79d49790, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20faaf77, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@311a0b3e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3982206a, org.springframework.security.web.session.SessionManagementFilter@2f99d8c, org.springframework.security.web.access.ExceptionTranslationFilter@318e3942, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a5b7394]
+2020-05-05 09:32:16,571 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1220] Using default implementation for ThreadExecutor
+2020-05-05 09:32:16,601 INFO [main] o.q.c.SchedulerSignalerImpl [SchedulerSignalerImpl.java:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-05 09:32:16,602 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:229] Quartz Scheduler v.2.3.2 created.
+2020-05-05 09:32:16,604 INFO [main] o.q.s.RAMJobStore [RAMJobStore.java:155] RAMJobStore initialized.
+2020-05-05 09:32:16,606 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:294] Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-05 09:32:16,609 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1374] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-05 09:32:16,610 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1378] Quartz scheduler version: 2.3.2
+2020-05-05 09:32:16,611 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3eff6846
+2020-05-05 09:32:17,000 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-05 09:32:17,183 INFO [main] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:727] Starting Quartz Scheduler now
+2020-05-05 09:32:17,185 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:547] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-05 09:32:17,237 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:59] Started RedisTemplateTest in 18.241 seconds (JVM running for 20.956)
+2020-05-05 09:32:17,842 INFO [main] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-05 09:32:17,847 INFO [main] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-05 09:32:18,700 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 09:32:18,701 INFO [Thread-3] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:845] Shutting down Quartz Scheduler
+2020-05-05 09:32:18,702 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:666] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-05 09:32:18,702 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 09:32:18,703 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:740] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-05 09:32:18,711 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-05 09:32:18,889 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
+2020-05-05 11:28:39,982 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:50] Starting RedisTemplateTest on WIN10-804271905 with PID 13552 (started by Administrator in F:\MyProject\community)
+2020-05-05 11:28:39,989 INFO [main] c.n.c.RedisTemplateTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-05 11:28:42,750 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 11:28:42,753 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-05 11:28:42,806 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 43ms. Found 0 Elasticsearch repository interfaces.
+2020-05-05 11:28:42,837 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 11:28:42,841 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-05 11:28:42,890 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2020-05-05 11:28:44,558 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$4f47b3ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-05 11:28:45,768 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-05 11:28:46,418 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-05 11:28:50,245 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-05 11:28:50,497 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-05 11:28:54,624 INFO [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:83] 
+
+Using generated security password: 37281f03-238d-4eea-ac63-bbc99b296cfd
+
+2020-05-05 11:28:55,223 INFO [main] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1851c7d2, org.springframework.security.web.context.SecurityContextPersistenceFilter@65d7eea4, org.springframework.security.web.header.HeaderWriterFilter@1c4057f9, org.springframework.security.web.csrf.CsrfFilter@2673487b, org.springframework.security.web.authentication.logout.LogoutFilter@f48a080, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d4e99de, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@21abda60, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@250a946, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6f6c8d45, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e4afd10, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@794cb26b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fe5c68b, org.springframework.security.web.session.SessionManagementFilter@5c1c9881, org.springframework.security.web.access.ExceptionTranslationFilter@7cdfa824, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70543cae]
+2020-05-05 11:28:56,320 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1220] Using default implementation for ThreadExecutor
+2020-05-05 11:28:56,365 INFO [main] o.q.c.SchedulerSignalerImpl [SchedulerSignalerImpl.java:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-05 11:28:56,365 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:229] Quartz Scheduler v.2.3.2 created.
+2020-05-05 11:28:56,367 INFO [main] o.q.s.RAMJobStore [RAMJobStore.java:155] RAMJobStore initialized.
+2020-05-05 11:28:56,369 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:294] Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-05 11:28:56,371 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1374] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-05 11:28:56,372 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1378] Quartz scheduler version: 2.3.2
+2020-05-05 11:28:56,372 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7cbf4f8c
+2020-05-05 11:28:56,729 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-05 11:28:56,910 INFO [main] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:727] Starting Quartz Scheduler now
+2020-05-05 11:28:56,911 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:547] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-05 11:28:56,954 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:59] Started RedisTemplateTest in 18.3 seconds (JVM running for 20.917)
+2020-05-05 11:28:57,648 INFO [main] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-05 11:28:57,655 INFO [main] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-05 11:28:58,478 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 11:28:58,480 INFO [Thread-3] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:845] Shutting down Quartz Scheduler
+2020-05-05 11:28:58,480 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:666] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-05 11:28:58,480 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 11:28:58,481 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:740] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-05 11:28:58,488 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-05 11:28:58,631 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
+2020-05-05 11:49:12,242 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:50] Starting RedisTemplateTest on WIN10-804271905 with PID 13352 (started by Administrator in F:\MyProject\community)
+2020-05-05 11:49:12,244 INFO [main] c.n.c.RedisTemplateTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-05 11:49:14,736 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 11:49:14,740 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-05 11:49:14,791 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 43ms. Found 0 Elasticsearch repository interfaces.
+2020-05-05 11:49:14,809 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 11:49:14,811 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-05 11:49:14,845 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 19ms. Found 0 Redis repository interfaces.
+2020-05-05 11:49:16,150 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$cd772b8b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-05 11:49:16,966 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-05 11:49:17,524 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-05 11:49:22,086 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-05 11:49:22,319 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-05 11:49:25,588 INFO [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:83] 
+
+Using generated security password: c81e2b62-ff4b-4902-ad26-e099ab5eb2a8
+
+2020-05-05 11:49:26,114 INFO [main] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c94bd18, org.springframework.security.web.context.SecurityContextPersistenceFilter@542ff147, org.springframework.security.web.header.HeaderWriterFilter@2299d903, org.springframework.security.web.csrf.CsrfFilter@1179fc8c, org.springframework.security.web.authentication.logout.LogoutFilter@6210666c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1c90029b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@280ecc33, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@71fb8301, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1a89414e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f6a8efe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41be8db9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7cdfa824, org.springframework.security.web.session.SessionManagementFilter@2c3f43d1, org.springframework.security.web.access.ExceptionTranslationFilter@57f0bfc3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@685e6a68]
+2020-05-05 11:49:27,139 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1220] Using default implementation for ThreadExecutor
+2020-05-05 11:49:27,176 INFO [main] o.q.c.SchedulerSignalerImpl [SchedulerSignalerImpl.java:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-05 11:49:27,178 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:229] Quartz Scheduler v.2.3.2 created.
+2020-05-05 11:49:27,181 INFO [main] o.q.s.RAMJobStore [RAMJobStore.java:155] RAMJobStore initialized.
+2020-05-05 11:49:27,185 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:294] Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-05 11:49:27,186 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1374] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-05 11:49:27,187 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1378] Quartz scheduler version: 2.3.2
+2020-05-05 11:49:27,187 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1cdd31a4
+2020-05-05 11:49:27,549 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-05 11:49:27,711 INFO [main] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:727] Starting Quartz Scheduler now
+2020-05-05 11:49:27,713 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:547] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-05 11:49:27,737 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:59] Started RedisTemplateTest in 16.548 seconds (JVM running for 19.576)
+2020-05-05 11:49:28,358 INFO [main] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-05 11:49:28,364 INFO [main] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-05 11:49:29,245 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 11:49:29,246 INFO [Thread-3] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:845] Shutting down Quartz Scheduler
+2020-05-05 11:49:29,247 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:666] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-05 11:49:29,247 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 11:49:29,248 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:740] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-05 11:49:29,254 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-05 11:49:29,400 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
+2020-05-05 11:59:34,047 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:50] Starting RedisTemplateTest on WIN10-804271905 with PID 12048 (started by Administrator in F:\MyProject\community)
+2020-05-05 11:59:34,050 INFO [main] c.n.c.RedisTemplateTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-05 11:59:36,607 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 11:59:36,613 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-05 11:59:36,680 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 56ms. Found 0 Elasticsearch repository interfaces.
+2020-05-05 11:59:36,702 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 11:59:36,706 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-05 11:59:36,759 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+2020-05-05 11:59:38,078 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$9e0fe21d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-05 11:59:38,873 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-05 11:59:39,394 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-05 11:59:42,920 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-05 11:59:43,144 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-05 11:59:46,191 INFO [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:83] 
+
+Using generated security password: 4ee88c1c-9981-445b-86ea-6127631f5371
+
+2020-05-05 11:59:46,676 INFO [main] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63e70bf9, org.springframework.security.web.context.SecurityContextPersistenceFilter@22aefae0, org.springframework.security.web.header.HeaderWriterFilter@72a3462f, org.springframework.security.web.csrf.CsrfFilter@74bdfa0b, org.springframework.security.web.authentication.logout.LogoutFilter@214fba74, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1851c7d2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@d76099a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@402a69f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4f3fec43, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b7ee56c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d3a03fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@419f0ea, org.springframework.security.web.session.SessionManagementFilter@632c3f55, org.springframework.security.web.access.ExceptionTranslationFilter@6076c66, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f76872f]
+2020-05-05 11:59:47,873 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1220] Using default implementation for ThreadExecutor
+2020-05-05 11:59:47,906 INFO [main] o.q.c.SchedulerSignalerImpl [SchedulerSignalerImpl.java:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-05 11:59:47,906 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:229] Quartz Scheduler v.2.3.2 created.
+2020-05-05 11:59:47,908 INFO [main] o.q.s.RAMJobStore [RAMJobStore.java:155] RAMJobStore initialized.
+2020-05-05 11:59:47,909 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:294] Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-05 11:59:47,910 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1374] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-05 11:59:47,910 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1378] Quartz scheduler version: 2.3.2
+2020-05-05 11:59:47,911 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7434ee13
+2020-05-05 11:59:48,298 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-05 11:59:48,480 INFO [main] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:727] Starting Quartz Scheduler now
+2020-05-05 11:59:48,481 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:547] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-05 11:59:48,508 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:59] Started RedisTemplateTest in 15.508 seconds (JVM running for 18.088)
+2020-05-05 11:59:49,227 INFO [main] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-05 11:59:49,229 INFO [main] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-05 11:59:50,036 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 11:59:50,037 INFO [Thread-3] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:845] Shutting down Quartz Scheduler
+2020-05-05 11:59:50,037 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:666] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-05 11:59:50,038 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 11:59:50,038 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:740] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-05 11:59:50,049 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-05 11:59:50,179 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
+2020-05-05 12:00:57,066 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:50] Starting RedisTemplateTest on WIN10-804271905 with PID 12032 (started by Administrator in F:\MyProject\community)
+2020-05-05 12:00:57,068 INFO [main] c.n.c.RedisTemplateTest [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-05 12:00:59,568 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 12:00:59,573 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-05 12:00:59,634 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 49ms. Found 0 Elasticsearch repository interfaces.
+2020-05-05 12:00:59,653 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-05 12:00:59,656 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-05 12:00:59,690 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2020-05-05 12:01:01,108 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$ae6f4ad6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-05 12:01:01,894 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-05 12:01:02,457 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-05 12:01:06,500 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-05 12:01:06,851 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-05 12:01:11,701 INFO [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:83] 
+
+Using generated security password: 9967fcf2-b11e-4ed2-994c-4c97a6ff5d1e
+
+2020-05-05 12:01:12,296 INFO [main] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6141647f, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c4057f9, org.springframework.security.web.header.HeaderWriterFilter@c94bd18, org.springframework.security.web.csrf.CsrfFilter@4cd7e993, org.springframework.security.web.authentication.logout.LogoutFilter@6c70b7c3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@28b5662d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@aa0dbca, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6f6c8d45, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@580ffea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1224e1b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d8be7b9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f2ca6f8, org.springframework.security.web.session.SessionManagementFilter@7cdfa824, org.springframework.security.web.access.ExceptionTranslationFilter@17f8db6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35e75f7a]
+2020-05-05 12:01:13,997 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1220] Using default implementation for ThreadExecutor
+2020-05-05 12:01:14,034 INFO [main] o.q.c.SchedulerSignalerImpl [SchedulerSignalerImpl.java:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-05 12:01:14,035 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:229] Quartz Scheduler v.2.3.2 created.
+2020-05-05 12:01:14,117 INFO [main] o.q.s.RAMJobStore [RAMJobStore.java:155] RAMJobStore initialized.
+2020-05-05 12:01:14,120 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:294] Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-05 12:01:14,159 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1374] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-05 12:01:14,160 INFO [main] o.q.i.StdSchedulerFactory [StdSchedulerFactory.java:1378] Quartz scheduler version: 2.3.2
+2020-05-05 12:01:14,163 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:2293] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5d22604e
+2020-05-05 12:01:15,443 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-05 12:01:15,816 INFO [main] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:727] Starting Quartz Scheduler now
+2020-05-05 12:01:15,818 INFO [main] o.q.c.QuartzScheduler [QuartzScheduler.java:547] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-05 12:01:15,878 INFO [main] c.n.c.RedisTemplateTest [StartupInfoLogger.java:59] Started RedisTemplateTest in 20.134 seconds (JVM running for 22.76)
+2020-05-05 12:01:16,630 INFO [main] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-05 12:01:16,634 INFO [main] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-05 12:01:17,779 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 12:01:17,780 INFO [Thread-3] o.s.s.q.SchedulerFactoryBean [SchedulerFactoryBean.java:845] Shutting down Quartz Scheduler
+2020-05-05 12:01:17,781 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:666] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-05 12:01:17,781 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:585] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-05 12:01:17,782 INFO [Thread-3] o.q.c.QuartzScheduler [QuartzScheduler.java:740] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-05 12:01:17,790 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-05 12:01:17,922 INFO [Thread-3] c.a.d.p.DruidDataSource [DruidDataSource.java:1825] {dataSource-1} closed
