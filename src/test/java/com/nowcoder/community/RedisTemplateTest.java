@@ -138,7 +138,7 @@ public class RedisTemplateTest{
                 return operations.exec();
             }
         });
-        System.out.println(obj.toString());
+
     }
 }
 
