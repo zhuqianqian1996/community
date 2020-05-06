@@ -1,1 +1,5 @@
 2020-05-03 10:39:03,870 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:199] Resolved [java.lang.NullPointerException]
+2020-05-06 14:14:35,174 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:199] Resolved [java.lang.NullPointerException]
+2020-05-06 16:13:20,193 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:199] Resolved [java.lang.NullPointerException]
+2020-05-06 16:13:21,662 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:199] Resolved [java.lang.NullPointerException]
+2020-05-06 16:13:30,476 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:199] Resolved [java.lang.NullPointerException]
