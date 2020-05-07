@@ -2,8 +2,10 @@ package com.nowcoder.community.controller;
 
 import com.nowcoder.community.annotation.LoginRequired;
 import com.nowcoder.community.model.User;
+import com.nowcoder.community.service.FollowerService;
 import com.nowcoder.community.service.LikeService;
 import com.nowcoder.community.service.UserService;
+import com.nowcoder.community.util.CommunityConstant;
 import com.nowcoder.community.util.CommunityUtil;
 import com.nowcoder.community.util.HostHolder;
 import org.apache.commons.lang3.StringUtils;
@@ -15,6 +17,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import sun.awt.im.InputMethodJFrame;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
@@ -24,7 +27,7 @@ import java.io.OutputStream;
 
 @Controller
 @RequestMapping("/user")
-public class UserController {
+public class UserController implements CommunityConstant {
 
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
@@ -46,6 +49,8 @@ public class UserController {
     @Autowired
     private LikeService likeService;
 
+    @Autowired
+    private FollowerService followerService;
 
     @LoginRequired
     @GetMapping(path = "/setting")
@@ -80,6 +85,7 @@ public class UserController {
             logger.error("上传文件失败，服务器发生异常"+e.getMessage());
         }
         //更新当前用户的头像的路径(web访问路径)
+
         //http://localhost:8080/community/user/header/xxx.png
         User user = hostHolder.getUser();
         String headerUrl = domain+contextPath+"/user/header/"+fileName;
@@ -119,6 +125,19 @@ public class UserController {
         int likeCount = likeService.findUserLikeCount(userId);
         //被点赞数
         model.addAttribute("likeCount",likeCount);
+
+        //关注数量
+        long followerCount = followerService.findFollowerCount(ENTITY_TYPE_USER, user.getId());
+        model.addAttribute("followerCount",followerCount);
+        //粉丝数量
+        long followeeCount = followerService.findFolloweeCount(user.getId(), ENTITY_TYPE_USER);
+        model.addAttribute("followeeCount",followeeCount);
+        //当前用户对这个用户是否已经关注
+        boolean hasFollowed = false;
+        if (hostHolder.getUser() != null){
+            hasFollowed = followerService.hasFollowed(hostHolder.getUser().getId(), ENTITY_TYPE_USER, userId);
+        }
+        model.addAttribute("hasFollowed",hasFollowed);
         return "site/profile";
     }
 }
