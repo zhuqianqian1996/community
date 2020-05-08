@@ -25,8 +25,8 @@ public class FollowerService {
                  String FolloweeKey = RedisKeyUtil.getFolloweeKey(userId,entityType);
                  //开启事务
                  operations.multi();
-                 redisTemplate.opsForZSet().add(FollowerKey,entityId,System.currentTimeMillis());
-                 redisTemplate.opsForZSet().add(FolloweeKey,userId,System.currentTimeMillis());
+                 redisTemplate.opsForZSet().add(FollowerKey,userId,System.currentTimeMillis());
+                 redisTemplate.opsForZSet().add(FolloweeKey,entityId,System.currentTimeMillis());
                  return operations.exec();
              }
          });
@@ -43,8 +43,8 @@ public class FollowerService {
                 String FolloweeKey = RedisKeyUtil.getFolloweeKey(userId,entityType);
                 //开启事务
                 operations.multi();
-                redisTemplate.opsForZSet().remove(FollowerKey,entityId);
-                redisTemplate.opsForZSet().remove(FolloweeKey,userId);
+                redisTemplate.opsForZSet().remove(FollowerKey,userId);
+                redisTemplate.opsForZSet().remove(FolloweeKey,entityId);
                 return operations.exec();
             }
         });

@@ -1,0 +1,433 @@
+2020-05-07 10:12:56,876 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 20856 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
+2020-05-07 10:12:56,952 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-07 10:12:57,207 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 10:12:57,207 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 10:13:00,118 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 10:13:00,127 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-07 10:13:00,199 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 42ms. Found 0 Redis repository interfaces.
+2020-05-07 10:13:02,503 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-05-07 10:13:02,527 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-07 10:13:02,544 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-05-07 10:13:02,545 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 10:13:02,561 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-07 10:13:02,562 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-07 10:13:02,563 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-07 10:13:02,563 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-07 10:13:02,673 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-07 10:13:02,884 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-05-07 10:13:02,885 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 5677 ms
+2020-05-07 10:13:03,323 INFO [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-07 10:13:03,648 INFO [restartedMain] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-07 10:13:05,762 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 10:13:05,918 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-07 10:13:06,887 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2020-05-07 10:13:06,912 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 10:13:07,043 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-07 10:13:07,082 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:202] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-05-07 10:13:07,086 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 11.868 seconds (JVM running for 14.934)
+2020-05-07 10:13:08,012 INFO [RMI TCP Connection(2)-192.168.1.101] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 10:13:08,014 INFO [RMI TCP Connection(2)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-05-07 10:13:08,053 INFO [RMI TCP Connection(2)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 39 ms
+2020-05-07 10:13:14,200 INFO [parallel-1] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-07 10:13:14,203 INFO [parallel-1] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-07 11:50:15,648 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 21552 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
+2020-05-07 11:50:15,691 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-07 11:50:15,835 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 11:50:15,836 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 11:50:19,584 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 11:50:19,588 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-07 11:50:19,658 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 50ms. Found 0 Redis repository interfaces.
+2020-05-07 11:50:22,027 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-05-07 11:50:22,056 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-07 11:50:22,077 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-05-07 11:50:22,078 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 11:50:22,241 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-07 11:50:22,243 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-07 11:50:22,243 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-07 11:50:22,244 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-07 11:50:22,408 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-07 11:50:23,057 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-05-07 11:50:23,057 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 7221 ms
+2020-05-07 11:50:23,588 INFO [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-07 11:50:24,033 INFO [restartedMain] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-07 11:50:26,584 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 11:50:26,836 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-07 11:50:28,412 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2020-05-07 11:50:28,444 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 11:50:28,600 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-07 11:50:28,673 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:202] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-05-07 11:50:28,678 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 14.905 seconds (JVM running for 18.199)
+2020-05-07 11:50:29,780 INFO [RMI TCP Connection(3)-192.168.1.101] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 11:50:29,782 INFO [RMI TCP Connection(3)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-05-07 11:50:29,821 INFO [RMI TCP Connection(3)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 38 ms
+2020-05-07 11:50:35,102 INFO [parallel-1] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-07 11:50:35,104 INFO [parallel-1] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-07 11:53:25,089 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 20224 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
+2020-05-07 11:53:25,101 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-07 11:53:25,282 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 11:53:25,283 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 11:53:28,235 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 11:53:28,239 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-07 11:53:28,362 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 86ms. Found 0 Redis repository interfaces.
+2020-05-07 11:53:30,979 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-05-07 11:53:31,004 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-07 11:53:31,023 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-05-07 11:53:31,024 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 11:53:31,041 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-07 11:53:31,045 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-07 11:53:31,048 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-07 11:53:31,049 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-07 11:53:31,053 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-07 11:53:31,426 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-05-07 11:53:31,427 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 6144 ms
+2020-05-07 11:53:31,978 INFO [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-07 11:53:32,274 INFO [restartedMain] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-07 11:53:34,390 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 11:53:34,582 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-07 11:53:35,419 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2020-05-07 11:53:35,439 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 11:53:35,545 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-07 11:53:35,581 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:202] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-05-07 11:53:35,585 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 12.516 seconds (JVM running for 15.681)
+2020-05-07 11:53:37,101 INFO [RMI TCP Connection(2)-192.168.1.101] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 11:53:37,102 INFO [RMI TCP Connection(2)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-05-07 11:53:37,133 INFO [RMI TCP Connection(2)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 31 ms
+2020-05-07 11:53:45,086 INFO [parallel-1] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-07 11:53:45,096 INFO [parallel-1] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-07 12:02:51,665 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 7992 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
+2020-05-07 12:02:51,669 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-07 12:02:51,792 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 12:02:51,797 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 12:02:54,440 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 12:02:54,445 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-07 12:02:54,524 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 49ms. Found 0 Redis repository interfaces.
+2020-05-07 12:02:56,364 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-05-07 12:02:56,394 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:02:56,406 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-05-07 12:02:56,407 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 12:02:56,414 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-07 12:02:56,414 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-07 12:02:56,415 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-07 12:02:56,415 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-07 12:02:56,419 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-07 12:02:56,632 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-05-07 12:02:56,633 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 4835 ms
+2020-05-07 12:02:57,009 INFO [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-07 12:02:57,312 INFO [restartedMain] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-07 12:02:59,100 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 12:02:59,262 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-07 12:03:00,092 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2020-05-07 12:03:00,104 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 12:03:00,205 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:03:00,244 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:202] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-05-07 12:03:00,254 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 10.352 seconds (JVM running for 13.569)
+2020-05-07 12:03:00,662 INFO [RMI TCP Connection(2)-192.168.1.101] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 12:03:00,662 INFO [RMI TCP Connection(2)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-05-07 12:03:00,685 INFO [RMI TCP Connection(2)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 22 ms
+2020-05-07 12:03:05,374 INFO [parallel-1] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-07 12:03:05,379 INFO [parallel-1] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-07 12:04:14,787 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 980 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
+2020-05-07 12:04:14,800 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-07 12:04:15,050 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 12:04:15,051 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 12:04:17,086 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 12:04:17,089 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-07 12:04:17,146 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 32ms. Found 0 Redis repository interfaces.
+2020-05-07 12:04:18,698 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-05-07 12:04:18,722 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:04:18,734 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-05-07 12:04:18,735 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 12:04:18,742 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-07 12:04:18,742 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-07 12:04:18,743 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-07 12:04:18,743 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-07 12:04:18,747 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-07 12:04:18,941 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-05-07 12:04:18,942 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 3891 ms
+2020-05-07 12:04:19,305 INFO [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-07 12:04:19,628 INFO [restartedMain] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-07 12:04:21,481 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 12:04:21,651 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-07 12:04:22,485 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2020-05-07 12:04:22,497 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 12:04:22,605 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:04:22,642 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:202] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-05-07 12:04:22,645 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 9.592 seconds (JVM running for 11.818)
+2020-05-07 12:04:23,332 INFO [RMI TCP Connection(3)-192.168.1.101] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 12:04:23,333 INFO [RMI TCP Connection(3)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-05-07 12:04:23,629 INFO [RMI TCP Connection(3)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 296 ms
+2020-05-07 12:04:32,789 INFO [parallel-1] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-07 12:04:32,795 INFO [parallel-1] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-07 12:05:20,655 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 15384 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
+2020-05-07 12:05:20,660 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-07 12:05:20,771 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 12:05:20,772 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 12:05:22,693 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 12:05:22,697 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-07 12:05:22,759 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
+2020-05-07 12:05:24,405 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-05-07 12:05:24,421 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:05:24,441 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-05-07 12:05:24,441 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 12:05:24,453 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-07 12:05:24,454 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-07 12:05:24,457 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-07 12:05:24,461 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-07 12:05:24,470 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-07 12:05:24,683 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-05-07 12:05:24,683 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 3911 ms
+2020-05-07 12:05:25,055 INFO [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-07 12:05:25,373 INFO [restartedMain] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-07 12:05:27,227 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 12:05:27,361 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-07 12:05:28,174 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2020-05-07 12:05:28,191 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 12:05:28,288 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:05:28,348 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:202] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-05-07 12:05:28,353 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 8.898 seconds (JVM running for 11.563)
+2020-05-07 12:05:29,053 INFO [RMI TCP Connection(2)-192.168.1.101] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 12:05:29,055 INFO [RMI TCP Connection(2)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-05-07 12:05:29,086 INFO [RMI TCP Connection(2)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 30 ms
+2020-05-07 12:05:32,390 INFO [parallel-1] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-07 12:05:32,394 INFO [parallel-1] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-07 12:10:28,580 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 2920 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
+2020-05-07 12:10:28,592 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-07 12:10:28,715 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 12:10:28,716 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 12:10:31,113 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 12:10:31,116 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-07 12:10:31,188 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 52ms. Found 0 Redis repository interfaces.
+2020-05-07 12:10:32,908 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-05-07 12:10:32,929 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:10:32,942 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-05-07 12:10:32,943 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 12:10:32,952 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-07 12:10:32,954 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-07 12:10:32,957 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-07 12:10:32,957 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-07 12:10:32,962 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-07 12:10:33,200 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-05-07 12:10:33,201 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 4485 ms
+2020-05-07 12:10:33,677 INFO [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-07 12:10:34,145 INFO [restartedMain] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-07 12:10:36,125 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 12:10:36,292 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-07 12:10:37,185 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2020-05-07 12:10:37,201 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 12:10:37,312 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:10:37,354 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:202] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-05-07 12:10:37,364 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 10.926 seconds (JVM running for 13.58)
+2020-05-07 12:10:37,957 INFO [RMI TCP Connection(2)-192.168.1.101] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 12:10:37,958 INFO [RMI TCP Connection(2)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-05-07 12:10:37,994 INFO [RMI TCP Connection(2)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 35 ms
+2020-05-07 12:10:54,350 INFO [parallel-1] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-07 12:10:54,353 INFO [parallel-1] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-07 12:13:10,819 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 15240 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
+2020-05-07 12:13:10,830 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-07 12:13:10,945 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 12:13:10,946 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 12:13:12,951 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 12:13:12,954 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-07 12:13:13,014 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 39ms. Found 0 Redis repository interfaces.
+2020-05-07 12:13:14,634 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-05-07 12:13:14,658 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:13:14,667 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-05-07 12:13:14,668 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 12:13:14,679 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-07 12:13:14,683 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-07 12:13:14,686 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-07 12:13:14,689 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-07 12:13:14,694 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-07 12:13:14,906 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-05-07 12:13:14,907 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 3961 ms
+2020-05-07 12:13:15,427 INFO [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-07 12:13:15,825 INFO [restartedMain] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-07 12:13:17,864 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 12:13:18,008 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-07 12:13:18,889 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2020-05-07 12:13:18,903 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 12:13:19,008 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:13:19,045 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:202] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-05-07 12:13:19,053 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 9.641 seconds (JVM running for 11.913)
+2020-05-07 12:13:19,632 INFO [RMI TCP Connection(1)-192.168.1.101] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 12:13:19,633 INFO [RMI TCP Connection(1)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-05-07 12:13:19,679 INFO [RMI TCP Connection(1)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 45 ms
+2020-05-07 12:13:21,987 INFO [parallel-1] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-07 12:13:21,989 INFO [parallel-1] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-07 12:15:32,322 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 2148 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
+2020-05-07 12:15:32,331 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-07 12:15:32,476 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 12:15:32,477 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 12:15:34,674 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 12:15:34,677 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-07 12:15:34,740 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 41ms. Found 0 Redis repository interfaces.
+2020-05-07 12:15:36,359 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-05-07 12:15:36,388 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:15:36,405 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-05-07 12:15:36,406 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 12:15:36,413 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-07 12:15:36,413 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-07 12:15:36,414 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-07 12:15:36,414 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-07 12:15:36,418 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-07 12:15:36,629 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-05-07 12:15:36,629 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 4152 ms
+2020-05-07 12:15:36,997 INFO [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-07 12:15:37,302 INFO [restartedMain] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-07 12:15:39,242 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 12:15:39,387 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-07 12:15:40,255 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2020-05-07 12:15:40,270 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 12:15:40,395 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:15:40,466 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:202] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-05-07 12:15:40,474 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 10.076 seconds (JVM running for 12.34)
+2020-05-07 12:15:40,931 INFO [RMI TCP Connection(2)-192.168.1.101] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 12:15:40,944 INFO [RMI TCP Connection(2)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-05-07 12:15:40,974 INFO [RMI TCP Connection(2)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 29 ms
+2020-05-07 12:15:47,476 INFO [parallel-1] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-07 12:15:47,479 INFO [parallel-1] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-07 12:18:48,468 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 1692 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
+2020-05-07 12:18:48,472 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-07 12:18:48,651 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 12:18:48,651 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 12:18:56,555 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 8332 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
+2020-05-07 12:18:56,569 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-07 12:18:56,695 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 12:18:56,696 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 12:18:58,579 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 12:18:58,584 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-07 12:18:58,646 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 40ms. Found 0 Redis repository interfaces.
+2020-05-07 12:19:00,173 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-05-07 12:19:00,188 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:19:00,206 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-05-07 12:19:00,206 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 12:19:00,219 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-07 12:19:00,220 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-07 12:19:00,220 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-07 12:19:00,220 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-07 12:19:00,224 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-07 12:19:00,417 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-05-07 12:19:00,418 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 3722 ms
+2020-05-07 12:19:00,790 INFO [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-07 12:19:01,089 INFO [restartedMain] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-07 12:19:02,835 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 12:19:02,974 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-07 12:19:03,728 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2020-05-07 12:19:03,750 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 12:19:03,844 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:19:03,883 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:202] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-05-07 12:19:03,889 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 8.575 seconds (JVM running for 10.742)
+2020-05-07 12:19:04,800 INFO [RMI TCP Connection(3)-192.168.1.101] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 12:19:04,803 INFO [RMI TCP Connection(3)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-05-07 12:19:04,855 INFO [RMI TCP Connection(3)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 52 ms
+2020-05-07 12:19:09,500 INFO [parallel-1] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-07 12:19:09,502 INFO [parallel-1] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-07 12:23:08,547 INFO [http-nio-8080-exec-4] o.a.c.h.Http11Processor [DirectJDKLog.java:175] Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:416)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:260)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-05-07 12:24:14,662 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 8452 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
+2020-05-07 12:24:14,666 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-07 12:24:14,776 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 12:24:14,776 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 12:24:17,116 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 12:24:17,120 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-07 12:24:17,193 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 48ms. Found 0 Redis repository interfaces.
+2020-05-07 12:24:18,792 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-05-07 12:24:18,817 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:24:18,831 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-05-07 12:24:18,832 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 12:24:18,840 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-07 12:24:18,840 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-07 12:24:18,841 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-07 12:24:18,841 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-07 12:24:18,850 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-07 12:24:19,047 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-05-07 12:24:19,048 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 4272 ms
+2020-05-07 12:24:19,406 INFO [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-07 12:24:19,690 INFO [restartedMain] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-07 12:24:21,494 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 12:24:21,631 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-07 12:24:22,440 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2020-05-07 12:24:22,455 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 12:24:22,544 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:24:22,585 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:202] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-05-07 12:24:22,593 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 9.461 seconds (JVM running for 11.462)
+2020-05-07 12:24:23,141 INFO [RMI TCP Connection(1)-192.168.1.101] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 12:24:23,142 INFO [RMI TCP Connection(1)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-05-07 12:24:23,165 INFO [RMI TCP Connection(1)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 23 ms
+2020-05-07 12:24:27,369 INFO [parallel-1] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-07 12:24:27,374 INFO [parallel-1] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-07 12:25:34,192 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 19284 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
+2020-05-07 12:25:34,197 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-07 12:25:34,334 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 12:25:34,334 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 12:25:36,883 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 12:25:36,890 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-07 12:25:36,957 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 46ms. Found 0 Redis repository interfaces.
+2020-05-07 12:25:39,025 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-05-07 12:25:39,056 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:25:39,086 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-05-07 12:25:39,087 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 12:25:39,103 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-07 12:25:39,104 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-07 12:25:39,105 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-07 12:25:39,106 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-07 12:25:39,119 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-07 12:25:39,489 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-05-07 12:25:39,490 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 5155 ms
+2020-05-07 12:25:40,042 INFO [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-07 12:25:40,383 INFO [restartedMain] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-07 12:25:42,696 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 12:25:42,894 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-07 12:25:43,957 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2020-05-07 12:25:43,971 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 12:25:44,073 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:25:44,114 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:202] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-05-07 12:25:44,117 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 11.606 seconds (JVM running for 14.402)
+2020-05-07 12:25:44,974 INFO [RMI TCP Connection(1)-192.168.1.101] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 12:25:44,975 INFO [RMI TCP Connection(1)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-05-07 12:25:45,004 INFO [RMI TCP Connection(1)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 28 ms
+2020-05-07 12:25:59,105 INFO [parallel-1] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-07 12:25:59,107 INFO [parallel-1] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
+2020-05-07 12:28:39,135 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on WIN10-804271905 with PID 14792 (F:\MyProject\community\target\classes started by Administrator in F:\MyProject\community)
+2020-05-07 12:28:39,144 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:648] No active profile set, falling back to default profiles: default
+2020-05-07 12:28:39,319 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 12:28:39,320 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 12:28:41,128 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:247] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 12:28:41,133 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-05-07 12:28:41,195 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:185] Finished Spring Data repository scanning in 39ms. Found 0 Redis repository interfaces.
+2020-05-07 12:28:42,774 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2020-05-07 12:28:42,800 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:28:42,812 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-05-07 12:28:42,813 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 12:28:42,821 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-07 12:28:42,822 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-05-07 12:28:42,822 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-07 12:28:42,822 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-07 12:28:42,826 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-05-07 12:28:43,013 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-05-07 12:28:43,013 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:284] Root WebApplicationContext: initialization completed in 3693 ms
+2020-05-07 12:28:43,372 INFO [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2020-05-07 12:28:43,674 INFO [restartedMain] c.a.d.p.DruidDataSource [DruidDataSource.java:930] {dataSource-1} inited
+2020-05-07 12:28:45,558 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 12:28:45,713 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2020-05-07 12:28:46,511 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2020-05-07 12:28:46,526 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 12:28:46,625 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-07 12:28:46,664 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:202] Tomcat started on port(s): 8080 (http) with context path '/community'
+2020-05-07 12:28:46,673 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 8.882 seconds (JVM running for 11.2)
+2020-05-07 12:28:47,623 INFO [RMI TCP Connection(3)-192.168.1.101] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 12:28:47,623 INFO [RMI TCP Connection(3)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-05-07 12:28:47,705 INFO [RMI TCP Connection(3)-192.168.1.101] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 81 ms
+2020-05-07 12:28:52,151 INFO [parallel-1] i.l.c.EpollProvider [EpollProvider.java:68] Starting without optional epoll library
+2020-05-07 12:28:52,153 INFO [parallel-1] i.l.c.KqueueProvider [KqueueProvider.java:70] Starting without optional kqueue library
