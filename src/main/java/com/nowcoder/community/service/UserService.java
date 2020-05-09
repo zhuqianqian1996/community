@@ -7,9 +7,11 @@ import com.nowcoder.community.model.User;
 import com.nowcoder.community.util.CommunityConstant;
 import com.nowcoder.community.util.CommunityUtil;
 import com.nowcoder.community.util.MailClient;
+import com.nowcoder.community.util.RedisKeyUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
@@ -19,6 +21,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 @Service
 public class UserService implements CommunityConstant {
@@ -40,8 +43,15 @@ public class UserService implements CommunityConstant {
     @Value("community.path.domain")
     private String domain;
 
+    @Autowired
+    private RedisTemplate redisTemplate;
+
     public User getUserById(int id){
-        return userDAO.selectUserById(id);
+         User user = getCache(id);
+         if (user == null){
+             user = initCache(id);
+         }
+         return user;
     }
 
     //注册
@@ -108,6 +118,7 @@ public class UserService implements CommunityConstant {
             return ACTIVATION_REPEAT;
         }else if (user.getActivationCode().equals(code)){
             userDAO.UpdateStatus(user.getId(),1);
+            clearCache(userId);
             return ACTIVATION_SUCCESS;
         }else {
             return ACTIVATION_FAILURE;
@@ -149,23 +160,34 @@ public class UserService implements CommunityConstant {
        loginTicket.setStatus(0);
        loginTicket.setTicket(CommunityUtil.generateUUID());
        loginTicket.setExpired(new Date(System.currentTimeMillis()+expiredSeconds+1000));
-       loginTicketDAO.insertLoginTicket(loginTicket);
-       map.put("ticket",loginTicket.getTicket());
-       return map;
+
+        //将loginTicket存入Redis中
+        String ticketKey = RedisKeyUtil.getTicketKey(loginTicket.getTicket());
+        redisTemplate.opsForValue().set(ticketKey,loginTicket);
+        map.put("ticket",loginTicket.getTicket());
+        return map;
    }
    //退出
    public void logout(String ticket){
-        loginTicketDAO.updateStatus(ticket,1);
+       //从Redis中取出元素，修改状态再存进Redis
+        String ticketKey = RedisKeyUtil.getTicketKey(ticket);
+        LoginTicket loginTicket = (LoginTicket) redisTemplate.opsForValue().get(ticketKey);
+        loginTicket.setStatus(1);
+        redisTemplate.opsForValue().set(ticketKey,loginTicket);
    }
 
    //查询凭证
-    public LoginTicket getLoginTicket(String ticket){
-        return loginTicketDAO.selectByTicket(ticket);
+    public LoginTicket findLoginTicket(String ticket){
+        String ticketKey = RedisKeyUtil.getTicketKey(ticket);
+        LoginTicket loginTicket = (LoginTicket) redisTemplate.opsForValue().get(ticketKey);
+        return loginTicket;
     }
 
     //上传头像
     public int uploadHeaderUrl(int userId,String headerUrl){
-        return userDAO.UpdateHeaderUrl(userId,headerUrl);
+         int rows = userDAO.UpdateHeaderUrl(userId, headerUrl);
+         clearCache(userId);
+         return rows;
     }
 
    //根据用户名查询用户
@@ -173,6 +195,25 @@ public class UserService implements CommunityConstant {
         return userDAO.selectUserByName(name);
     }
 
+    //1.优先从缓存中取值
+    public User getCache(int userId){
+         String userKey = RedisKeyUtil.getUserKey(userId);
+         return (User)redisTemplate.opsForValue().get(userKey);
+    }
+
+    //2.取不到时初始化缓存数据
+    public User initCache(int userId){
+         User user = userDAO.selectUserById(userId);
+         String userKey = RedisKeyUtil.getUserKey(userId);
+         redisTemplate.opsForValue().set(userKey,user,3600, TimeUnit.MILLISECONDS);
+         return user;
+    }
+
+    //3.数据变更时，清除缓存数据
+    public void clearCache(int userId){
+        String userKey = RedisKeyUtil.getUserKey(userId);
+        redisTemplate.delete(userKey);
+    }
 
 }
 

@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
 @Mapper
+@Deprecated
 public interface LoginTicketDAO {
 
     String TABLE_NAME = " login_ticket ";
