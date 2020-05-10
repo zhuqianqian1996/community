@@ -201,7 +201,7 @@ public class UserService implements CommunityConstant {
          return (User)redisTemplate.opsForValue().get(userKey);
     }
 
-    //2.取不到时初始化缓存数据
+    //2.如果缓存中没有数据就从数据库中读取数据的放到缓存中
     public User initCache(int userId){
          User user = userDAO.selectUserById(userId);
          String userKey = RedisKeyUtil.getUserKey(userId);
@@ -214,7 +214,6 @@ public class UserService implements CommunityConstant {
         String userKey = RedisKeyUtil.getUserKey(userId);
         redisTemplate.delete(userKey);
     }
-
 }
 
 

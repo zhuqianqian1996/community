@@ -99,7 +99,7 @@ public class LoginController implements CommunityConstant {
         //生成验证码
         String text = kaptchaProducer.createText();
         BufferedImage image = kaptchaProducer.createImage(text);
-        //使用Redis优化
+        //使用Redis优化，获取一个随机字符串作为验证码的拥有者
         String kaptchaOwner = CommunityUtil.generateUUID();
            //将该验证码的服务用户设置到Cookie中
         Cookie cookie = new Cookie("kaptchaOwner",kaptchaOwner);
@@ -124,10 +124,11 @@ public class LoginController implements CommunityConstant {
     @PostMapping(path = "/login")
     public String login(String username, String password, String code, boolean rememberme,
                         HttpServletResponse response, Model model, @CookieValue("kaptchaOwner") String kaptchaOwner){
-        //检查验证码
+        //初始化验证码为空
         String kaptcha = null;
          //判断Cookie中是否有验证码的拥有者
         if (StringUtils.isNotBlank(kaptchaOwner)){
+            //根据验证码的拥有者获取验证码在redis中的key
              String kaptchaKey = RedisKeyUtil.getKaptchaKey(kaptchaOwner);
              kaptcha = (String) redisTemplate.opsForValue().get(kaptchaKey);
         }

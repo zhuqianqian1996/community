@@ -93,6 +93,7 @@ public class UserController implements CommunityConstant {
         return "redirect:/index";
     }
 
+    //获取头像
     @GetMapping(path = "/header/{fileName}")
     public void getHeader(@PathVariable("fileName") String fileName, HttpServletResponse response){
         //服务器存放的路径
@@ -114,6 +115,7 @@ public class UserController implements CommunityConstant {
 
     }
 
+    //个人主页
     @GetMapping("/profile/{userId}")
     public String getProfilePage(@PathVariable("userId") int userId, Model model){
          User user = userService.getUserById(userId);
@@ -129,7 +131,7 @@ public class UserController implements CommunityConstant {
         //关注数量
         long followerCount = followerService.findFollowerCount(ENTITY_TYPE_USER, user.getId());
         model.addAttribute("followerCount",followerCount);
-        //粉丝数量
+        //对象粉丝的数量
         long followeeCount = followerService.findFolloweeCount(user.getId(), ENTITY_TYPE_USER);
         model.addAttribute("followeeCount",followeeCount);
         //当前用户对这个用户是否已经关注

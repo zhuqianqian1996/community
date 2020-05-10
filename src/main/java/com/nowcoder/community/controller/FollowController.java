@@ -52,6 +52,7 @@ public class FollowController implements CommunityConstant {
     //关注对象列表
     @GetMapping("/followees/{userId}")
     public String getFollowees(@PathVariable("userId") int userId, Model model, Page page){
+        //获取当前对象
         User user = userService.getUserById(userId);
         if (user == null){
             throw new RuntimeException("用户不存在！");
