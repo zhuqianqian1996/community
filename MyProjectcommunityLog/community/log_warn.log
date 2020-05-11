@@ -1,48 +1,156 @@
-2020-05-09 15:33:29,717 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.web.bind.MissingRequestCookieException: Missing cookie 'kaptchaOwner' for method parameter of type String]
-2020-05-09 16:03:45,926 WARN [RMI TCP Connection(2)-192.168.1.101] o.s.b.a.m.MailHealthIndicator [AbstractHealthIndicator.java:87] Mail health check failed
-javax.mail.MessagingException: [EOF]
-	at com.sun.mail.smtp.SMTPTransport.issueCommand(SMTPTransport.java:2324)
-	at com.sun.mail.smtp.SMTPTransport.helo(SMTPTransport.java:1678)
-	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:746)
-	at javax.mail.Service.connect(Service.java:366)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:518)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:398)
-	at org.springframework.boot.actuate.mail.MailHealthIndicator.doHealthCheck(MailHealthIndicator.java:42)
-	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
-	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:95)
-	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:50)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
-	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:76)
-	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
-	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:121)
-	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:96)
-	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
-	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
-	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
-	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
-	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
-	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
-	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:828)
-	at sun.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:323)
-	at sun.rmi.transport.Transport$1.run(Transport.java:200)
-	at sun.rmi.transport.Transport$1.run(Transport.java:197)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
-	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
-	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
-	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$254(TCPTransport.java:683)
-	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$5/1753662464.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-2020-05-09 16:11:41,040 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "profile.html"]
-2020-05-10 19:56:02,077 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:199] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "login.html"]
+2020-05-12 00:01:25,812 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:01:26,988 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:01:28,195 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:01:29,501 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:01:31,011 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:01:32,741 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:01:34,647 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:01:36,854 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:01:38,861 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:01:41,071 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:01:43,282 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:01:45,289 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:10:44,045 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:10:45,150 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:10:46,252 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:10:47,557 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:10:48,962 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:10:50,871 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:10:52,980 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:10:54,992 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:10:57,001 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:10:58,911 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:11:00,937 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:11:02,851 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:11:04,963 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:11:06,877 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:11:08,784 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:11:10,993 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:11:12,998 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:11:15,012 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:11:17,119 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:11:19,332 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:11:21,442 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:12:06,452 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:12:07,599 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:12:08,701 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:12:10,012 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:12:11,419 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:12:13,326 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:12:15,533 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:15,805 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:16,973 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:18,078 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:19,281 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:20,784 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:22,793 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:24,800 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:27,005 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:29,112 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:31,230 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:33,336 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:35,542 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:37,549 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:39,755 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:41,762 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:43,972 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:45,979 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:48,091 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:50,199 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:52,408 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:54,614 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:56,525 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:14:58,739 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:00,648 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:02,654 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:04,564 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:34,798 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:36,095 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:37,301 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:38,604 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:40,008 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:41,713 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:43,822 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:45,627 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:47,435 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:49,642 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:51,850 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:53,855 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:55,860 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:57,870 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:15:59,877 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:01,885 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:03,794 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:05,710 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:07,930 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:10,136 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:12,242 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:14,302 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:16,412 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:18,227 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:20,386 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:22,399 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:24,411 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:26,522 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:28,662 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:30,776 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:32,747 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:16:33,672 WARN [main] o.s.w.c.s.GenericWebApplicationContext [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'; nested exception is org.apache.kafka.common.errors.TimeoutException: Timeout expired while fetching topic metadata
+2020-05-12 00:16:33,674 WARN [main] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'tomcatMetricsBinder': java.lang.NullPointerException
+2020-05-12 00:19:23,019 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:24,124 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:25,328 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:26,634 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:28,041 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:29,752 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:31,857 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:33,772 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:35,787 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:38,009 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:39,952 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:41,865 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:43,676 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:45,581 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:47,591 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:49,705 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:51,722 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:53,831 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:55,846 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:57,862 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:19:59,977 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:20:02,097 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:20:04,204 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:20:06,420 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:20:08,325 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:20:10,234 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:20:12,350 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:20:14,462 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:20:16,370 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:20:18,278 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:20:20,389 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:20:21,951 WARN [main] o.s.w.c.s.GenericWebApplicationContext [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'; nested exception is org.apache.kafka.common.errors.TimeoutException: Timeout expired while fetching topic metadata
+2020-05-12 00:20:21,952 WARN [main] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'tomcatMetricsBinder': java.lang.NullPointerException
+2020-05-12 00:24:07,312 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:24:08,439 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:24:09,542 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:24:10,745 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:24:12,250 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:24:14,062 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:24:56,711 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:24:57,818 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:24:59,022 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:25:00,225 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:25:01,630 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:25:03,536 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:25:05,543 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:25:07,450 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:25:09,557 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:25:11,563 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:25:13,671 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:25:15,579 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:25:17,793 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:25:19,905 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:25:21,814 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:25:24,022 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:25:26,130 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
+2020-05-12 00:25:28,339 WARN [main] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=test-consumer-group] Connection to node -1 could not be established. Broker may not be available.
