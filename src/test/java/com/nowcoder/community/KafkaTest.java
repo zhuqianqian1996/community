@@ -18,8 +18,8 @@ public class KafkaTest {
 
     @Test
     public void testKafka(){
-        kafkaProducer.sendMessage("test","你好");
-        kafkaProducer.sendMessage("test","在吗？");
+        kafkaProducer.sendMessage("test1","你好");
+        kafkaProducer.sendMessage("test1","在吗？");
         try {
             Thread.sleep(100);
         } catch (InterruptedException e) {

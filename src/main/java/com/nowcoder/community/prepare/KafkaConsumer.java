@@ -11,7 +11,7 @@ public class KafkaConsumer {
      * 指定监听的是哪个topic的事件
      * @param record ：消息被封装成 ConsumerRecord
      */
-    @KafkaListener(topics = {"test"})
+    @KafkaListener(topics = {"test1"})
     public void handleEvent(ConsumerRecord record) {
         System.out.println(record.value());
     }
