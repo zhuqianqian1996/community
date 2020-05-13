@@ -1,5 +1,8 @@
 package com.nowcoder.community.controller;
 
+import com.google.code.kaptcha.Producer;
+import com.nowcoder.community.event.EventProducer;
+import com.nowcoder.community.model.Event;
 import com.nowcoder.community.model.Page;
 import com.nowcoder.community.model.User;
 import com.nowcoder.community.service.FollowerService;
@@ -30,13 +33,23 @@ public class FollowController implements CommunityConstant {
     @Autowired
     private UserService userService;
 
-
+    @Autowired
+    private EventProducer eventProducer;
     //关注
     @PostMapping("/follow")
     @ResponseBody
     public String follow(int entityType,int entityId){
          User user = hostHolder.getUser();
          followerService.follow(user.getId(),entityType,entityId);
+         //触发关注事件
+        Event event = new Event();
+        event.setTopic(TOPIC_FOLLOW)
+                .setUserId(hostHolder.getUser().getId())
+                .setEntityType(entityType)
+                .setEntityId(entityId)
+                .setEntityUserId(user.getId());
+
+        eventProducer.fireEvent(event);
          return CommunityUtil.getJOSNString(0,"已关注");
     }
 

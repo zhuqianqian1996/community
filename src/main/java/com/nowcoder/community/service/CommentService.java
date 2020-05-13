@@ -50,4 +50,9 @@ public class CommentService implements CommunityConstant {
         }
         return rows;
     }
+    
+    //根据id查询评论
+    public Comment findCommentById(int id){
+        return commentDao.selectCommentById(id);
+    }
 }

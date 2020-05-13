@@ -1,13 +1,7 @@
 package com.nowcoder.community;
 
-import com.nowcoder.community.dao.DiscussPostDAO;
-import com.nowcoder.community.dao.LoginTicketDAO;
-import com.nowcoder.community.dao.MessageDAO;
-import com.nowcoder.community.dao.UserDAO;
-import com.nowcoder.community.model.DiscussPost;
-import com.nowcoder.community.model.LoginTicket;
-import com.nowcoder.community.model.Message;
-import com.nowcoder.community.model.User;
+import com.nowcoder.community.dao.*;
+import com.nowcoder.community.model.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,16 +21,19 @@ import java.util.List;
 public class MapperTest {
 
     @Resource
-    UserDAO userDAO;
+    private UserDAO userDAO;
 
     @Resource
-    DiscussPostDAO discussPostDAO;
+    private DiscussPostDAO discussPostDAO;
 
     @Resource
-    LoginTicketDAO loginTicketDAO;
+    private LoginTicketDAO loginTicketDAO;
 
     @Resource
-    MessageDAO messageDAO;
+    private MessageDAO messageDAO;
+
+    @Resource
+    private CommentDAO commentDAO;
 
     @Test
     public void selectUserById(){
@@ -111,6 +108,10 @@ public class MapperTest {
 
     }
 
-
+    @Test
+    public void testCommentDao(){
+        Comment comment = commentDAO.selectCommentById(35);
+        System.out.println(comment);
+    }
 
 }
