@@ -40,6 +40,7 @@ public class EventConsumer implements CommunityConstant {
             logger.error("消息格式错误!");
             return;
         }
+        //发送站内通知
         Message message = new Message();
         message.setFromId(SYSTEM_USER_ID);
         message.setToId(event.getEntityUserId());

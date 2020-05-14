@@ -53,7 +53,7 @@ public class CommentController implements CommunityConstant {
                 .setEntityId(comment.getId())
                 .setData("postId",discussPostId);
 
-        //根据评论的类型获取数据
+        //根据评论的类型获取事件作用实体的作者
         if (comment.getEntityType() == ENTITY_TYPE_POST){
             DiscussPost target = discussPostService.findDiscussPostById(comment.getEntityId());
             event.setEntityUserId(target.getId());
