@@ -1,7 +1,6 @@
 package com.nowcoder.community.dao;
 
 import com.nowcoder.community.model.Message;
-import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -30,4 +29,15 @@ public interface MessageDAO {
     //修改私信的状态
     int updateMessageStatus(List<Integer> ids,int status);
 
+    //查询某一个主题下最新的通知
+    Message selectLatestNotice(int userId , String topic);
+
+    //查询某个主题所包含的通知数量
+    int selectNoticeCount(int userId,String topic);
+
+    //查询未读的通知数量
+    int selectNoticeUnreadCount(int userId,String topic);
+
+    //查询某一个主题的通知列表
+    List<Message> selectNotices(int userId,String topic,int offset,int limit);
 }
