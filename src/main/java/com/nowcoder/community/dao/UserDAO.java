@@ -5,7 +5,6 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
-import org.springframework.stereotype.Service;
 
 @Mapper
 public interface UserDAO {
@@ -28,7 +27,7 @@ public interface UserDAO {
     //增加一个用户
     @Insert({"insert into",TABLE_NAME,"(",INSERT_FIELDS,") " +
             "values(#{username},#{password},#{salt},#{email},#{type},#{status},#{activationCode},#{headerUrl},#{createTime})"})
-    int addUser(User user);
+    int insertUser(User user);
 
     //修改的状态
     @Update({"update ",TABLE_NAME,"set status=#{status} where id=#{id}"})

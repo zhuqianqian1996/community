@@ -26,11 +26,13 @@ public class MailClient {
 
     public void sendMessage(String to,String subject,String content){
         try {
+            //MimeMessage：多用途互联网邮件信息
             MimeMessage message = javaMailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message);
+            //初始化发件人，收件人，主题，内容
             helper.setFrom(from);
-            helper.setTo(to);//收件人
-            helper.setSubject(subject);//主题
+            helper.setTo(to);
+            helper.setSubject(subject);
             helper.setText(content,true);
             javaMailSender.send(helper.getMimeMessage());
         } catch (MessagingException e) {

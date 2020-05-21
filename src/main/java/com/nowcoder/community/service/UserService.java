@@ -28,9 +28,6 @@ public class UserService implements CommunityConstant {
     @Resource
     private UserDAO userDAO;
 
-    @Resource
-    private LoginTicketDAO loginTicketDAO;
-
     @Autowired
     private MailClient mailClient;
 
@@ -46,7 +43,9 @@ public class UserService implements CommunityConstant {
     @Autowired
     private RedisTemplate redisTemplate;
 
-    public User getUserById(int id){
+    //根据id查询用户
+    public User findUserById(int id){
+        //在缓存中查找用户，如果缓存中没有用户，就从数据库中读取用户信息并初始化到缓存中
          User user = getCache(id);
          if (user == null){
              user = initCache(id);
@@ -59,6 +58,7 @@ public class UserService implements CommunityConstant {
         Map<String,Object> map = new HashMap<>();
         //空值判断
         if(user == null){
+            //抛出非法参数异常
             throw new IllegalArgumentException("参数不能为空");
         }
         //username 空值判断
@@ -88,18 +88,17 @@ public class UserService implements CommunityConstant {
            map.put("emailMsg","该邮箱已注册!");
        }
        else {
-
            //注册用户（对密码加密）
            user.setSalt(CommunityUtil.generateUUID().substring(0, 5));
            user.setPassword(CommunityUtil.md5(user.getPassword() + user.getSalt()));
            user.setType(0);//普通用户
-           user.setStatus(0);
+           user.setStatus(0);//未激活
            user.setHeaderUrl(String.format("http://images.nowcoder.com/head/%dt.png", new Random().nextInt(1000)));
            user.setActivationCode(CommunityUtil.generateUUID());
            user.setCreateTime(new Date());
-           userDAO.addUser(user);
+           userDAO.insertUser(user);
 
-           //给用户发送激活邮件
+           //给用户发送激活邮件,Context是thymeleaf的上下文
            Context context = new Context();
            context.setVariable("email", user.getEmail());
            //激活路径:http://localhost:8080/community/activation/101/code
@@ -111,7 +110,7 @@ public class UserService implements CommunityConstant {
            return map;
     }
 
-    //激活
+    //激活：此处的激活码是在注册的时候就初始化完毕了
     public int activation(int userId,String code){
         User user = userDAO.selectUserById(userId);
         if (user.getStatus()==1){
@@ -167,6 +166,7 @@ public class UserService implements CommunityConstant {
         map.put("ticket",loginTicket.getTicket());
         return map;
    }
+
    //退出
    public void logout(String ticket){
        //从Redis中取出元素，修改状态再存进Redis

@@ -17,7 +17,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import sun.awt.im.InputMethodJFrame;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
@@ -118,7 +117,7 @@ public class UserController implements CommunityConstant {
     //个人主页
     @GetMapping("/profile/{userId}")
     public String getProfilePage(@PathVariable("userId") int userId, Model model){
-         User user = userService.getUserById(userId);
+         User user = userService.findUserById(userId);
         if (user == null) {
             throw new RuntimeException("用户不存在！");
         }

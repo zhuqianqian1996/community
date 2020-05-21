@@ -19,14 +19,17 @@ public class DiscussPostService {
    @Autowired
    private SensitiveFilter sensitiveFilter;
 
+   //获取帖子列表分页查询
    public List<DiscussPost> findDiscussPosts(int userId, int offset, int limit){
        return discussPostDAO.selectDiscussPosts(userId,offset,limit);
    }
 
+   //获取某一个用户发表帖子的行数
    public int findDiscussPostRows(int userId){
        return discussPostDAO.selectDiscussPostRows(userId);
    }
 
+   //增加一个帖子
    public int addDiscussPost(DiscussPost post){
        if (post == null){
            throw new IllegalArgumentException("参数不能为空");
@@ -39,7 +42,7 @@ public class DiscussPostService {
        post.setTitle(sensitiveFilter.filter(post.getTitle()));
        post.setContent(sensitiveFilter.filter(post.getContent()));
 
-       return discussPostDAO.addDiscussPost(post);
+       return discussPostDAO.insertDiscussPost(post);
    }
 
 

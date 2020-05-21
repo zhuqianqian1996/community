@@ -24,7 +24,7 @@ public interface DiscussPostDAO {
     //增加帖子
     @Insert({"insert into",TABLE_NAME,"(",INSERT_FIELDS,")" +
             " values(#{userId},#{title},#{content},#{type},#{status},#{createTime},#{commentCount},#{score})"})
-    int addDiscussPost(DiscussPost discussPost);
+    int insertDiscussPost(DiscussPost discussPost);
 
     //查询帖子的详情
     @Select({"select ",SELECT_FIELDS,"from ",TABLE_NAME," where id=#{id}"})

@@ -101,7 +101,7 @@ public class LoginController implements CommunityConstant {
         BufferedImage image = kaptchaProducer.createImage(text);
         //使用Redis优化，获取一个随机字符串作为验证码的拥有者
         String kaptchaOwner = CommunityUtil.generateUUID();
-           //将该验证码的服务用户设置到Cookie中
+        //将该验证码的服务用户设置到Cookie中
         Cookie cookie = new Cookie("kaptchaOwner",kaptchaOwner);
         cookie.setMaxAge(60);
         cookie.setPath(contextPath);

@@ -1,6 +1,5 @@
 package com.nowcoder.community.controller;
 
-import com.google.code.kaptcha.Producer;
 import com.nowcoder.community.event.EventProducer;
 import com.nowcoder.community.model.Event;
 import com.nowcoder.community.model.Page;
@@ -66,7 +65,7 @@ public class FollowController implements CommunityConstant {
     @GetMapping("/followees/{userId}")
     public String getFollowees(@PathVariable("userId") int userId, Model model, Page page){
         //获取当前对象
-        User user = userService.getUserById(userId);
+        User user = userService.findUserById(userId);
         if (user == null){
             throw new RuntimeException("用户不存在！");
         }
@@ -91,7 +90,7 @@ public class FollowController implements CommunityConstant {
     //粉丝列表
     @GetMapping("/followers/{userId}")
     public String getFollowers(@PathVariable("userId") int userId, Model model, Page page){
-        User user = userService.getUserById(userId);
+        User user = userService.findUserById(userId);
         if (user == null){
             throw new RuntimeException("用户不存在！");
         }

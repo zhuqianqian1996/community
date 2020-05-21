@@ -92,7 +92,7 @@ public class FollowerService implements CommunityConstant {
         List<Map<String, Object>> list = new ArrayList<>();
         for (Integer targetId : targetIds) {
             Map<String, Object> map = new HashMap<>();
-            User user = userService.getUserById(targetId);
+            User user = userService.findUserById(targetId);
             map.put("user", user);
             //此处的分数就是关注的时间
             Double score = redisTemplate.opsForZSet().score(followeeKey, targetId);
@@ -113,7 +113,7 @@ public class FollowerService implements CommunityConstant {
         List<Map<String, Object>> list = new ArrayList<>();
         for (Integer targetId : targetIds) {
             Map<String, Object> map = new HashMap<>();
-            User user = userService.getUserById(targetId);
+            User user = userService.findUserById(targetId);
             map.put("user", user);
             Double score = redisTemplate.opsForZSet().score(followerKey, targetId);
             map.put("followTime", new Date(score.longValue()));

@@ -58,7 +58,7 @@ public class DiscussPostController implements CommunityConstant {
     @GetMapping("/detail/{discussPostId}")
     public String getDiscussPost(@PathVariable("discussPostId") int discussPostId, Model model, Page page){
          DiscussPost post = discussPostService.findDiscussPostById(discussPostId);
-         User user = userService.getUserById(post.getUserId());
+         User user = userService.findUserById(post.getUserId());
          model.addAttribute("post",post);
          model.addAttribute("user",user);
          //点赞的数量
@@ -82,7 +82,7 @@ public class DiscussPostController implements CommunityConstant {
             for (Comment comment : comments) {
                 // 评论VO
                 Map<String,Object> commentVo = new HashMap<>();
-                commentVo.put("user",userService.getUserById(post.getUserId()));
+                commentVo.put("user",userService.findUserById(post.getUserId()));
                 commentVo.put("comment",comment);
                 //点赞的数量
                  likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_COMMENT, comment.getId());
@@ -100,9 +100,9 @@ public class DiscussPostController implements CommunityConstant {
                        //回复
                        replyVo.put("reply",reply);
                        //用户
-                       replyVo.put("user",userService.getUserById(reply.getUserId()));
+                       replyVo.put("user",userService.findUserById(reply.getUserId()));
                        //回复目标用户
-                       User targetUser = reply.getTargetId() == 0 ? null : userService.getUserById(reply.getTargetId());
+                       User targetUser = reply.getTargetId() == 0 ? null : userService.findUserById(reply.getTargetId());
                        replyVo.put("target",targetUser);
                        //点赞的数量
                        likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_COMMENT, reply.getId());

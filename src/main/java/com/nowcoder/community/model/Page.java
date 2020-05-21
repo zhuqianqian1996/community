@@ -29,7 +29,7 @@ public class Page {
     }
 
     public void setLimit(int limit) {
-        if (limit>=1&&limit<=100) {
+        if (limit >= 1 && limit <= 100) {
             this.limit = limit;
         }
     }
@@ -39,7 +39,7 @@ public class Page {
     }
 
     public void setRows(int rows) {
-        if ((rows>=0)) {
+        if ((rows >= 0)) {
             this.rows = rows;
         }
     }
