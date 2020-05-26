@@ -1,7 +1,5 @@
-package com.nowcoder.community;
+package com.nowcoder.community.service;
 
-
-import com.nowcoder.community.dao.DiscussPostDAO;
 import com.nowcoder.community.dao.elasticsearch.DiscussPostRepository;
 import com.nowcoder.community.model.DiscussPost;
 import org.elasticsearch.action.search.SearchResponse;
@@ -12,10 +10,7 @@ import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
 import org.elasticsearch.search.sort.SortBuilders;
 import org.elasticsearch.search.sort.SortOrder;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -25,114 +20,42 @@ import org.springframework.data.elasticsearch.core.aggregation.AggregatedPage;
 import org.springframework.data.elasticsearch.core.aggregation.impl.AggregatedPageImpl;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
 import org.springframework.data.elasticsearch.core.query.SearchQuery;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
-@ContextConfiguration(classes = CommunityApplication.class)
-public class ElasticSearchTest {
+@Service
+public class ElasticsearchService {
 
-    @Resource
-    private DiscussPostDAO discussPostDAO;
-
-    @Resource
+    @Autowired
     private DiscussPostRepository discussPostRepository;
 
     @Autowired
     private ElasticsearchTemplate elasticsearchTemplate;
 
-    //插入一条数据
-    @Test
-    public void testInsert(){
-        discussPostRepository.save(discussPostDAO.selectDiscussPostById(241));
-        discussPostRepository.save(discussPostDAO.selectDiscussPostById(242));
-        discussPostRepository.save(discussPostDAO.selectDiscussPostById(243));
-    }
-
-    //插入多条数据
-    @Test
-    public void testInsertList() {
-        discussPostRepository.saveAll(discussPostDAO.selectDiscussPosts(101, 0, 100));
-        discussPostRepository.saveAll(discussPostDAO.selectDiscussPosts(102, 0, 100));
-        discussPostRepository.saveAll(discussPostDAO.selectDiscussPosts(103, 0, 100));
-        discussPostRepository.saveAll(discussPostDAO.selectDiscussPosts(111, 0, 100));
-        discussPostRepository.saveAll(discussPostDAO.selectDiscussPosts(112, 0, 100));
-        discussPostRepository.saveAll(discussPostDAO.selectDiscussPosts(131, 0, 100));
-        discussPostRepository.saveAll(discussPostDAO.selectDiscussPosts(132, 0, 100));
-        discussPostRepository.saveAll(discussPostDAO.selectDiscussPosts(133, 0, 100));
-        discussPostRepository.saveAll(discussPostDAO.selectDiscussPosts(134, 0, 100));
-    }
-
-    //修改数据
-    @Test
-    public void testUpdate(){
-        DiscussPost post = discussPostDAO.selectDiscussPostById(231);
-        post.setContent("我是新人，我要灌水");
-        //插入到ES中
+    //向ES中存入数据
+    public void save(DiscussPost post){
         discussPostRepository.save(post);
     }
 
-    //删除
-    @Test
-    public void testDelete(){
-        //删除一条数据
-       //discussPostRepository.deleteById(231);
-       //删除全部数据
-        discussPostRepository.deleteAll();
+    //通过id删除数据
+    public void deleteDiscussPostById(int id){
+        discussPostRepository.deleteById(id);
     }
 
-    //搜索
-    @Test
-    public void testSearch(){
+    //查询数据
+    public Page<DiscussPost> SearchDiscussPost(String keyword,int current,int limit ) {
         SearchQuery searchQuery = new NativeSearchQueryBuilder()
                 //查询匹配规则：查询的文本，查询的域
-                .withQuery(QueryBuilders.multiMatchQuery("互联网寒冬", "title", "content"))
+                .withQuery(QueryBuilders.multiMatchQuery(keyword, "title", "content"))
                 //排序的规则：按照某个字段排序
                 .withSort(SortBuilders.fieldSort("type").order(SortOrder.DESC))
                 .withSort(SortBuilders.fieldSort("score").order(SortOrder.DESC))
                 .withSort(SortBuilders.fieldSort("createTime").order(SortOrder.DESC))
                 //分页展示
-                .withPageable(PageRequest.of(0,10))
-                //高亮显示
-                .withHighlightFields(
-                        new HighlightBuilder.Field("title").preTags("<em>").postTags("</em>"),
-                        new HighlightBuilder.Field("content").preTags("<em>").postTags("</em>")
-                        ).build();
-       //底层原理 elasticsearchTemplate.queryForPage(searchQuery, class ,SearchResultMapper) 底层获取到了高亮显示的值但是没有返回
-        //执行查询
-        Page<DiscussPost> page = discussPostRepository.search(searchQuery);
-        //获取所有的数据
-        System.out.println(page.getTotalElements());
-        //获取页数
-        System.out.println(page.getTotalPages());
-        //当前页数
-        System.out.println(page.getNumber());
-        //每一页显示数据的数量
-        System.out.println(page.getSize());
-        //遍历数据
-        for (DiscussPost post : page) {
-            System.out.println(post);
-        }
-    }
-
-    //使用 ElasticsearchTemplate进行查询操作
-    @Test
-    public void testSearchByTemplate(){
-        SearchQuery searchQuery = new NativeSearchQueryBuilder()
-                //查询匹配规则：查询的文本，查询的域
-                .withQuery(QueryBuilders.multiMatchQuery("互联网寒冬", "title", "content"))
-                //排序的规则：按照某个字段排序
-                .withSort(SortBuilders.fieldSort("type").order(SortOrder.DESC))
-                .withSort(SortBuilders.fieldSort("score").order(SortOrder.DESC))
-                .withSort(SortBuilders.fieldSort("createTime").order(SortOrder.DESC))
-                //分页展示
-                .withPageable(PageRequest.of(0,10))
+                .withPageable(PageRequest.of(current, limit))
                 //高亮显示
                 .withHighlightFields(
                         new HighlightBuilder.Field("title").preTags("<em>").postTags("</em>"),
@@ -140,13 +63,13 @@ public class ElasticSearchTest {
                 ).build();
 
         //查询数据:返回的就是数据
-        Page<DiscussPost> page = elasticsearchTemplate.queryForPage(searchQuery, DiscussPost.class, new SearchResultMapper() {
+        return elasticsearchTemplate.queryForPage(searchQuery, DiscussPost.class, new SearchResultMapper() {
             @Override
             public <T> AggregatedPage<T> mapResults(SearchResponse response, Class<T> aClass, Pageable pageable) {
                 //获取多个命令的数据
                 SearchHits hits = response.getHits();
                 //如果没有命令，则说明没有查询到数据
-                if (hits.getTotalHits() <= 0){
+                if (hits.getTotalHits() <= 0) {
                     return null;
                 }
                 //大于0要对数据进行处理
@@ -196,21 +119,9 @@ public class ElasticSearchTest {
                     list.add(post);
                 }
                 //返回所需要的结果
-                return new AggregatedPageImpl(list,pageable,hits.getTotalHits(),
-                        response.getAggregations(),response.getScrollId(),hits.getMaxScore());
+                return new AggregatedPageImpl(list, pageable, hits.getTotalHits(),
+                        response.getAggregations(), response.getScrollId(), hits.getMaxScore());
             }
         });
-        //获取所有的数据
-        System.out.println(page.getTotalElements());
-        //获取页数
-        System.out.println(page.getTotalPages());
-        //当前页数
-        System.out.println(page.getNumber());
-        //每一页显示数据的数量
-        System.out.println(page.getSize());
-        //遍历数据
-        for (DiscussPost post : page) {
-            System.out.println(post);
-        }
     }
 }

@@ -36,8 +36,6 @@ public class CommentController implements CommunityConstant {
     @Autowired
     private DiscussPostService discussPostService;
 
-
-
     @PostMapping("/add/{discussPostId}")
     public String addComment(@PathVariable("discussPostId") int discussPostId, Comment comment){
        comment.setStatus(0);
@@ -63,6 +61,15 @@ public class CommentController implements CommunityConstant {
         }
         //发送事件
         eventProducer.fireEvent(event);
+
+        //触发发帖事件
+        if (comment.getEntityType() == ENTITY_TYPE_POST){
+             event = new Event().setUserId(comment.getUserId())
+                                .setTopic(TOPIC_PUBLISH)
+                                .setEntityId(discussPostId)
+                                .setEntityType(ENTITY_TYPE_POST);
+            eventProducer.fireEvent(event);
+        }
         return "redirect:/discuss/detail/"+discussPostId;
     }
 }
