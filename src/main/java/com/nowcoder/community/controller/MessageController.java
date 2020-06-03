@@ -52,7 +52,7 @@ public class MessageController implements CommunityConstant {
                map.put("unreadCount",messageService.findLetterUnreadCount(user.getId(),message.getConversationId()));
                //当前用户是否是消息发送用户，是的就将目标用户设置为消息接收用户，否则目标用户就是发送用户
                int targetId = user.getId() == message.getFromId() ? message.getToId() : message.getFromId();
-               User targetUser = userService.findUserById(targetId);
+               User targetUser = userService.getUserById(targetId);
                map.put("target",targetUser);
                conversations.add(map);
            }
@@ -82,7 +82,7 @@ public class MessageController implements CommunityConstant {
            for (Message letter : letterList) {
                Map<String,Object> map = new HashMap<>();
                map.put("letter",letter);
-               map.put("fromUser",userService.findUserById(letter.getFromId()));
+               map.put("fromUser",userService.getUserById(letter.getFromId()));
                letters.add(map);
            }
        }
@@ -117,9 +117,9 @@ public class MessageController implements CommunityConstant {
        int last_id = Integer.parseInt(ids[1]);
        //当前用户在前，则发送用户在后
        if (hostHolder.getUser().getId() == first_id){
-        return userService.findUserById(last_id);
+        return userService.getUserById(last_id);
        }else {
-           return userService.findUserById(first_id);
+           return userService.getUserById(first_id);
        }
    }
 
@@ -162,7 +162,7 @@ public class MessageController implements CommunityConstant {
             //将数据库中序列化的content转成对象
             Map<String,Object> data = JSONObject.parseObject(content, HashMap.class);
             //将content中的字段存储到data对象中
-            messageVO.put("user",userService.findUserById((Integer) data.get("userId")));
+            messageVO.put("user",userService.getUserById((Integer) data.get("userId")));
             messageVO.put("entityType",data.get("entityType"));
             messageVO.put("entityId",data.get("entityId"));
             messageVO.put("postId",data.get("postId"));
@@ -186,7 +186,7 @@ public class MessageController implements CommunityConstant {
             //将数据库中序列化的content转成对象
             Map<String,Object> data = JSONObject.parseObject(content, HashMap.class);
             //将content中的字段存储到data对象中
-            messageVO.put("user",userService.findUserById((int)data.get("userId")));
+            messageVO.put("user",userService.getUserById((int)data.get("userId")));
             messageVO.put("entityType",data.get("entityType"));
             messageVO.put("entityId",data.get("entityId"));
             //显示通知的数量
@@ -208,7 +208,7 @@ public class MessageController implements CommunityConstant {
             //将数据库中序列化的content转成对象
             Map<String,Object> data = JSONObject.parseObject(content, HashMap.class);
             //将content中的字段存储到data对象中
-            messageVO.put("user",userService.findUserById((int)data.get("userId")));
+            messageVO.put("user",userService.getUserById((int)data.get("userId")));
             messageVO.put("entityType",data.get("entityType"));
             messageVO.put("entityId",data.get("entityId"));
             messageVO.put("postId",data.get("postId"));
@@ -250,12 +250,12 @@ public class MessageController implements CommunityConstant {
                //反序列化获取对象
                Map<String, Object> data = JSONObject.parseObject(content, HashMap.class);
                //将对象中的重要信息存储到VO中
-               noticeVO.put("user",userService.findUserById((Integer) data.get("userId")));
+               noticeVO.put("user",userService.getUserById((Integer) data.get("userId")));
                noticeVO.put("entityId",data.get("entityId"));
                noticeVO.put("entityType",data.get("entityType"));
                noticeVO.put("postId",data.get("postId"));
                //通知的作者
-               noticeVO.put("fromUser",userService.findUserById(notice.getFromId()));
+               noticeVO.put("fromUser",userService.getUserById(notice.getFromId()));
                noticeVOList.add(noticeVO);
            }
        }

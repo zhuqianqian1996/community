@@ -65,7 +65,7 @@ public class FollowController implements CommunityConstant {
     @GetMapping("/followees/{userId}")
     public String getFollowees(@PathVariable("userId") int userId, Model model, Page page){
         //获取当前对象
-        User user = userService.findUserById(userId);
+        User user = userService.getUserById(userId);
         if (user == null){
             throw new RuntimeException("用户不存在！");
         }
@@ -79,7 +79,7 @@ public class FollowController implements CommunityConstant {
         if (followees != null){
             for (Map<String, Object> map : followees) {
                  User u = (User)map.get("user");
-                 //判断当前用户是否关注了map中的用户
+                 //判断当前用户是否关注了map中的目标用户
                  map.put("hasFollowed",hasFollowed(u.getId()));
             }
         }
@@ -90,7 +90,7 @@ public class FollowController implements CommunityConstant {
     //粉丝列表
     @GetMapping("/followers/{userId}")
     public String getFollowers(@PathVariable("userId") int userId, Model model, Page page){
-        User user = userService.findUserById(userId);
+        User user = userService.getUserById(userId);
         if (user == null){
             throw new RuntimeException("用户不存在！");
         }
@@ -104,7 +104,7 @@ public class FollowController implements CommunityConstant {
         if (followers != null){
             for (Map<String, Object> map : followers) {
                 User u = (User)map.get("user");
-                //判断当前用户是否关注了map中的用户
+                //判断当前用户是否关注了map中的目标用户
                 map.put("hasFollowed",hasFollowed(u.getId()));
             }
         }

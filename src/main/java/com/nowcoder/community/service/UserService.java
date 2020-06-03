@@ -28,6 +28,9 @@ public class UserService implements CommunityConstant {
     @Resource
     private UserDAO userDAO;
 
+    @Resource
+    private LoginTicketDAO loginTicketDAO;
+
     @Autowired
     private MailClient mailClient;
 
@@ -43,9 +46,8 @@ public class UserService implements CommunityConstant {
     @Autowired
     private RedisTemplate redisTemplate;
 
-    //根据id查询用户
-    public User findUserById(int id){
-        //在缓存中查找用户，如果缓存中没有用户，就从数据库中读取用户信息并初始化到缓存中
+    //根据id在缓存中查找User
+    public User getUserById(int id){
          User user = getCache(id);
          if (user == null){
              user = initCache(id);
@@ -58,7 +60,6 @@ public class UserService implements CommunityConstant {
         Map<String,Object> map = new HashMap<>();
         //空值判断
         if(user == null){
-            //抛出非法参数异常
             throw new IllegalArgumentException("参数不能为空");
         }
         //username 空值判断
@@ -88,17 +89,18 @@ public class UserService implements CommunityConstant {
            map.put("emailMsg","该邮箱已注册!");
        }
        else {
+
            //注册用户（对密码加密）
            user.setSalt(CommunityUtil.generateUUID().substring(0, 5));
            user.setPassword(CommunityUtil.md5(user.getPassword() + user.getSalt()));
            user.setType(0);//普通用户
-           user.setStatus(0);//未激活
+           user.setStatus(0);
            user.setHeaderUrl(String.format("http://images.nowcoder.com/head/%dt.png", new Random().nextInt(1000)));
            user.setActivationCode(CommunityUtil.generateUUID());
            user.setCreateTime(new Date());
-           userDAO.insertUser(user);
+           userDAO.addUser(user);
 
-           //给用户发送激活邮件,Context是thymeleaf的上下文
+           //给用户发送激活邮件
            Context context = new Context();
            context.setVariable("email", user.getEmail());
            //激活路径:http://localhost:8080/community/activation/101/code
@@ -110,13 +112,14 @@ public class UserService implements CommunityConstant {
            return map;
     }
 
-    //激活：此处的激活码是在注册的时候就初始化完毕了
+    //激活
     public int activation(int userId,String code){
         User user = userDAO.selectUserById(userId);
         if (user.getStatus()==1){
             return ACTIVATION_REPEAT;
         }else if (user.getActivationCode().equals(code)){
             userDAO.UpdateStatus(user.getId(),1);
+            //修改状态码以后原有的User状态发生变化，需要清除缓存中的User
             clearCache(userId);
             return ACTIVATION_SUCCESS;
         }else {
@@ -153,14 +156,15 @@ public class UserService implements CommunityConstant {
            map.put("passwordMsg","密码不正确!!");
            return map;
        }
-       //生成登录凭证（return ticket）
+       //生成登录凭证（return ticket）:初始化LoginTicket
        LoginTicket loginTicket = new LoginTicket();
        loginTicket.setUserId(user.getId());
+       //将登录凭证置为有效状态
        loginTicket.setStatus(0);
        loginTicket.setTicket(CommunityUtil.generateUUID());
        loginTicket.setExpired(new Date(System.currentTimeMillis()+expiredSeconds+1000));
 
-        //将loginTicket存入Redis中
+        //将loginTicket存入Redis中,loginTicket在logout方法中取出
         String ticketKey = RedisKeyUtil.getTicketKey(loginTicket.getTicket());
         redisTemplate.opsForValue().set(ticketKey,loginTicket);
         map.put("ticket",loginTicket.getTicket());
@@ -172,6 +176,7 @@ public class UserService implements CommunityConstant {
        //从Redis中取出元素，修改状态再存进Redis
         String ticketKey = RedisKeyUtil.getTicketKey(ticket);
         LoginTicket loginTicket = (LoginTicket) redisTemplate.opsForValue().get(ticketKey);
+        //退出登录以后将登录凭证置为无效状态
         loginTicket.setStatus(1);
         redisTemplate.opsForValue().set(ticketKey,loginTicket);
    }
@@ -183,7 +188,7 @@ public class UserService implements CommunityConstant {
         return loginTicket;
     }
 
-    //上传头像
+    //上传头像:上传头像以后就改变了User的状态，所以需要将缓存中的User删除
     public int uploadHeaderUrl(int userId,String headerUrl){
          int rows = userDAO.UpdateHeaderUrl(userId, headerUrl);
          clearCache(userId);
@@ -201,7 +206,7 @@ public class UserService implements CommunityConstant {
          return (User)redisTemplate.opsForValue().get(userKey);
     }
 
-    //2.如果缓存中没有数据就从数据库中读取数据的放到缓存中
+    //2.取不到时初始化缓存数据
     public User initCache(int userId){
          User user = userDAO.selectUserById(userId);
          String userKey = RedisKeyUtil.getUserKey(userId);
@@ -214,6 +219,7 @@ public class UserService implements CommunityConstant {
         String userKey = RedisKeyUtil.getUserKey(userId);
         redisTemplate.delete(userKey);
     }
+
 }
 
 

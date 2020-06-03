@@ -40,7 +40,7 @@ public class SearchController implements CommunityConstant {
                 Map<String,Object> map = new HashMap<>();
                 //将帖子、帖子作者、赞的数量封装到map中
                 map.put("post",post);
-                map.put("user",userService.findUserById(post.getUserId()));
+                map.put("user",userService.getUserById(post.getUserId()));
                 map.put("likeCount",likeService.findEntityLikeCount(ENTITY_TYPE_POST,post.getId()));
                 discussPosts.add(map);
             }
