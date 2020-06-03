@@ -79,7 +79,7 @@ public class FollowController implements CommunityConstant {
         if (followees != null){
             for (Map<String, Object> map : followees) {
                  User u = (User)map.get("user");
-                 //判断当前用户是否关注了map中的用户
+                 //判断当前用户是否关注了map中的目标用户
                  map.put("hasFollowed",hasFollowed(u.getId()));
             }
         }
@@ -104,7 +104,7 @@ public class FollowController implements CommunityConstant {
         if (followers != null){
             for (Map<String, Object> map : followers) {
                 User u = (User)map.get("user");
-                //判断当前用户是否关注了map中的用户
+                //判断当前用户是否关注了map中的目标用户
                 map.put("hasFollowed",hasFollowed(u.getId()));
             }
         }
