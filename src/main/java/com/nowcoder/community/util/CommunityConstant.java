@@ -27,13 +27,13 @@ public interface CommunityConstant {
     int ENTITY_TYPE_USER = 3;
 
     //主题类型：评论
-    String TOPIC_COMMENT = "COMMENT";
+    String TOPIC_COMMENT = "comment";
 
     //主题类型：点赞
-    String TOPIC_LIKE = "lIKE";
+    String TOPIC_LIKE = "like";
 
     //主题类型：关注
-    String TOPIC_FOLLOW = "FOLLOW";
+    String TOPIC_FOLLOW = "follow";
 
     //主题类型：发布帖子
     String TOPIC_PUBLISH = "PUBLISH";
