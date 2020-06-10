@@ -111,6 +111,7 @@ public class MessageController implements CommunityConstant {
         return ids;
     }
 
+    //获取私信的作者
     private User getTargetUser(String conversationId){
        String[] ids = conversationId.split("_");
        int first_id = Integer.parseInt(ids[0]);
@@ -157,11 +158,11 @@ public class MessageController implements CommunityConstant {
         Map<String,Object> messageVO = new HashMap<>();
         if (message != null){
             messageVO.put("message",message);
-            //对content中的内容进行转义
+            //对content中的内容解析成字符串
             String content = HtmlUtils.htmlUnescape(message.getContent());
             //将数据库中序列化的content转成对象
             Map<String,Object> data = JSONObject.parseObject(content, HashMap.class);
-            //将content中的字段存储到data对象中
+            //将content中的字段存储到messageVO中
             messageVO.put("user",userService.getUserById((Integer) data.get("userId")));
             messageVO.put("entityType",data.get("entityType"));
             messageVO.put("entityId",data.get("entityId"));
@@ -185,7 +186,7 @@ public class MessageController implements CommunityConstant {
             String content = HtmlUtils.htmlUnescape(message.getContent());
             //将数据库中序列化的content转成对象
             Map<String,Object> data = JSONObject.parseObject(content, HashMap.class);
-            //将content中的字段存储到data对象中
+            //将content中的字段存储到messageVO中
             messageVO.put("user",userService.getUserById((int)data.get("userId")));
             messageVO.put("entityType",data.get("entityType"));
             messageVO.put("entityId",data.get("entityId"));
@@ -230,7 +231,7 @@ public class MessageController implements CommunityConstant {
         return "site/notice";
     }
 
-   //查询某一个主题的通知列表
+   //查询某一个主题的通知详情
    @GetMapping("/notice/detail/{topic}")
     public String getNoticeDetail(@PathVariable("topic") String topic ,Page page,Model model){
        User user = hostHolder.getUser();

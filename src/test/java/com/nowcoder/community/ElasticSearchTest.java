@@ -90,6 +90,7 @@ public class ElasticSearchTest {
     //搜索
     @Test
     public void testSearch(){
+        //设置查询规则
         SearchQuery searchQuery = new NativeSearchQueryBuilder()
                 //查询匹配规则：查询的文本，查询的域
                 .withQuery(QueryBuilders.multiMatchQuery("互联网寒冬", "title", "content"))
@@ -102,10 +103,10 @@ public class ElasticSearchTest {
                 //高亮显示
                 .withHighlightFields(
                         new HighlightBuilder.Field("title").preTags("<em>").postTags("</em>"),
-                        new HighlightBuilder.Field("content").preTags("<em>").postTags("</em>")
+                        new HighlightBuilder.Field("content").preTags(" <em>").postTags("</em>")
                         ).build();
        //底层原理 elasticsearchTemplate.queryForPage(searchQuery, class ,SearchResultMapper) 底层获取到了高亮显示的值但是没有返回
-        //执行查询
+        //执行查询：获取查询结果
         Page<DiscussPost> page = discussPostRepository.search(searchQuery);
         //获取所有的数据
         System.out.println(page.getTotalElements());
@@ -124,6 +125,7 @@ public class ElasticSearchTest {
     //使用 ElasticsearchTemplate进行查询操作
     @Test
     public void testSearchByTemplate(){
+        //设置查询规则
         SearchQuery searchQuery = new NativeSearchQueryBuilder()
                 //查询匹配规则：查询的文本，查询的域
                 .withQuery(QueryBuilders.multiMatchQuery("互联网寒冬", "title", "content"))
@@ -154,7 +156,7 @@ public class ElasticSearchTest {
                 //遍历命令
                 for (SearchHit hit : hits) {
                     DiscussPost post = new DiscussPost();
-                    //将数据存储到模型中
+                    //将命令中的数据存储到模型中
                     String id = hit.getSourceAsMap().get("id").toString();
                     post.setId(Integer.valueOf(id));
 

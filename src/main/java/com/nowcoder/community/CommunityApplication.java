@@ -14,6 +14,7 @@ public class CommunityApplication {
 
 	@PostConstruct
 	public void init(){
+		//将Netty4Utils中的属性es.set.netty.runtime.available.processors修改为false，解决Netty启动冲突
 		System.setProperty("es.set.netty.runtime.available.processors","false");
 	}
 
